@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: Volkorn, sans-serif;
+  padding-top: 20px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body, p, ul, li, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}

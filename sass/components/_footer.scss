@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  min-height: 140px;
+  align-items: center;
+  justify-content: space-around;
+  background-color:#223D67;
+  color: $color-white;
+  font-size: 20px;
+  line-height: 1.2;
+
+  &__contacts b {
+    margin-bottom: 10px;
+  }
+}

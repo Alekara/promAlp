@@ -1,0 +1,49 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  // margin-top: 50px;
+  padding: 50px;
+
+  height: 100vh;
+
+  &__left {
+    width: 52%;
+    padding: 5% 2%;
+    font-size: 18px;
+    text-align: right;
+    margin-top: 70px;
+  }
+
+  &__title {
+    font-size: 32px;
+    color: $color-primary;
+    text-align: right;
+
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  &__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: $color-primary;
+    top: 50%;
+  }
+
+  &__right {
+    width: 42%;
+    padding: 2%;
+  }
+
+  &__img {
+    box-shadow: 25px -25px 0 $color-blue;
+    margin: 40px auto;
+    width: 480px;
+    display: block;
+  }
+}
