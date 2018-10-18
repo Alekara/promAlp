@@ -262,23 +262,24 @@ html, body, p, ul, li, h1, h2, h3, h4 {
   height: calc(100vh - 60px);
   padding: 3%;
   padding-left: 8%;
-  background-color: yellow;
   position: relative; }
   .objects__heading {
     text-align: left; }
   .objects__description {
     height: 100%;
     width: 80%;
-    background-color: pink;
-    padding: 3%; }
+    background-color: rgba(72, 188, 245, 0.4);
+    padding: 3%;
+    border: 4px solid #48bcf5; }
+  .objects__task {
+    width: 50%; }
   .objects__slider {
     width: 600px;
     height: 400px;
     position: absolute;
     top: calc(50% - 200px);
     right: 8%;
-    background-color: #fff;
-    border: 3px solid #48bcf5; }
+    background-color: #fff; }
   .objects__btn {
     position: absolute;
     right: 8%;
@@ -296,8 +297,20 @@ html, body, p, ul, li, h1, h2, h3, h4 {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
 
-.slider {
-  background-color: cyan; }
+.slider__container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 4px solid #48bcf5; }
+.slider__stripe {
+  width: 600px;
+  height: 1200px;
+  position: relative;
+  top: 0;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+.slider__stripe img {
+  display: block; }
 
 .footer {
   display: -webkit-box;

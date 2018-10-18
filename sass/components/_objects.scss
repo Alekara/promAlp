@@ -3,7 +3,6 @@
   height: calc(100vh - 60px);  //вручную подставить значение переменной $header-height
   padding: 3%;
   padding-left: 8%;
-  background-color: yellow;
   position: relative;
 
   &__heading {
@@ -14,8 +13,13 @@
   &__description {
     height: 100%;
     width: 80%;
-    background-color: pink;
+    background-color: rgba($color-primary, .4);
     padding: 3%;
+    border: 4px solid $color-primary;
+  }
+
+  &__task {
+    width: 50%;
   }
 
   &__slider {
@@ -25,7 +29,8 @@
     top: calc(50% - 200px);
     right: 8%;
     background-color: #fff;
-    border: 3px solid $color-primary;
+
+    // box-shadow: 0 0 8px black;
 
   }
 

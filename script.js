@@ -1,18 +1,23 @@
 var fromTop = 0;
+var namePlace = document.querySelector(".objects__name");
+var taskPlace = document.querySelector(".objects__task");
 
-document.querySelector(".slider__btn--right").addEventListener("click", function () {
-  fromTop = fromTop - 480;
-  if (fromTop < -960) {
+namePlace.textContent = "Национальный аэропорт Минск-2";
+taskPlace.textContent = "очистка терминалов от снега и наледи";
+
+document.querySelector(".objects__btn--down").addEventListener("click", function () {
+  fromTop = fromTop - 400;
+  if (fromTop < -1200) {
     fromTop = 0;
   }
   checkTop();
 })
 
-document.querySelector(".slider__btn--left").addEventListener("click", function () {
+document.querySelector(".objects__btn--up").addEventListener("click", function () {
   if (fromTop == 0) {
-    fromTop = fromTop - 960;
+    fromTop = fromTop - 1200;
   } else {
-    fromTop = fromTop + 480;
+    fromTop = fromTop + 400;
   }
   checkTop();
 })
@@ -20,12 +25,18 @@ document.querySelector(".slider__btn--left").addEventListener("click", function 
 function checkTop () {
   var slider = document.querySelector(".slider__stripe");
   slider.style.top = fromTop + "px";
-  var textPlace = document.querySelector(".slider__text p");
   if (fromTop == 0) {
-    textPlace.textContent = "Национальный аэропорт Минск-2";
-  } else if (fromTop == -480) {
-    textPlace.textContent = "Гостиница \"Виктория\"";
-  } else if (fromTop == -960) {
-    textPlace.textContent = "Стадион \"Динамо\"";
+    namePlace.textContent = "Национальный аэропорт Минск-2";
+    taskPlace.textContent = "очистка терминалов от снега и наледи";
+  } else if (fromTop == -400) {
+    namePlace.textContent = "Гостиница \"Виктория\"";
+    taskPlace.textContent = "ремонт фасада, устранение течи, задувания и промерзания, замена лопнувших витражей";
+  } else if (fromTop == -800) {
+    namePlace.textContent = "Стадион \"Динамо\"";
+    taskPlace.textContent = "монтаж металлоконструкций, ремонт балок, панелей, кровли, ходовых мостиков";
+
+  } else if (fromTop == -1200) {
+    namePlace.textContent = "Кинотеатр \"Мир\"";
+    taskPlace.textContent = "демонтаж вывески";
   }
 };
