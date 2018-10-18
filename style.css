@@ -14,6 +14,12 @@ html, body, p, ul, li, h1, h2, h3, h4 {
   padding: 0;
   margin: 0; }
 
+.h2-heading {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 30px; }
+
 .main-header {
   height: 60px; }
 
@@ -130,20 +136,17 @@ html, body, p, ul, li, h1, h2, h3, h4 {
 .why-us {
   position: relative; }
   .why-us__heading {
-    font-size: 32px;
+    text-align: center;
     position: absolute;
-    top: 1%;
+    top: 3%;
+    left: 40%;
     z-index: 500;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 1.5%;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 400;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px; }
+    color: #fff; }
   .why-us__container {
-    -webkit-transform: skewY(3deg);
-            transform: skewY(3deg);
+    -webkit-transform: skewY(-3deg);
+            transform: skewY(-3deg);
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(72, 188, 245, 0.8)), to(rgba(106, 195, 205, 0.8))), url(img/why-us.jpg);
     background-image: linear-gradient(to right, rgba(72, 188, 245, 0.8), rgba(106, 195, 205, 0.8)), url(img/why-us.jpg);
     background-size: cover; }
@@ -160,13 +163,13 @@ html, body, p, ul, li, h1, h2, h3, h4 {
         flex-wrap: wrap;
     list-style: none;
     min-height: 700px;
-    padding: 8% 2% 6%;
+    padding: 9% 2% 5%;
     overflow: hidden;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     font-family: Arial, serif;
-    -webkit-transform: skewY(-3deg);
-            transform: skewY(-3deg);
+    -webkit-transform: skewY(3deg);
+            transform: skewY(3deg);
     color: #25476F; }
   .why-us__item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -238,13 +241,10 @@ html, body, p, ul, li, h1, h2, h3, h4 {
     background-origin: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 40px; }
-  .services__content {
+    margin-bottom: 40px;
     padding: 4%; }
-  .services__header {
-    color: #fff;
-    font-size: 36px;
-    margin-bottom: 30px; }
+  .services__heading {
+    color: #fff; }
   .services__list {
     color: #fff;
     font-size: 20px;
@@ -259,60 +259,45 @@ html, body, p, ul, li, h1, h2, h3, h4 {
 
 .objects {
   width: 100%;
-  padding: 5%; }
+  height: calc(100vh - 60px);
+  padding: 3%;
+  padding-left: 8%;
+  background-color: yellow;
+  position: relative; }
+  .objects__heading {
+    text-align: left; }
+  .objects__description {
+    height: 100%;
+    width: 80%;
+    background-color: pink;
+    padding: 3%; }
+  .objects__slider {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: calc(50% - 200px);
+    right: 8%;
+    background-color: #fff;
+    border: 3px solid #48bcf5; }
+  .objects__btn {
+    position: absolute;
+    right: 8%;
+    border: none;
+    background-color: transparent; }
+    .objects__btn:hover {
+      -webkit-transform: rotate(90deg) scale(1.1);
+              transform: rotate(90deg) scale(1.1); }
+  .objects__btn--up {
+    top: 8%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .objects__btn--down {
+    bottom: 8%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
 
 .slider {
-  width: 780px;
-  height: 600px;
-  margin: 5% auto;
-  position: relative;
-  padding: 70px; }
-  .slider__container {
-    width: 640px;
-    height: 480px;
-    overflow: hidden;
-    -webkit-box-shadow: 0 0 8px black;
-            box-shadow: 0 0 8px black;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    border-radius: 5px; }
-  .slider__stripe {
-    width: 640px;
-    height: 1440px;
-    position: relative;
-    top: 0;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out; }
-  .slider__stripe img {
-    display: block; }
-  .slider__btn {
-    position: absolute;
-    top: 155px;
-    width: 60px;
-    height: 390px;
-    border: none;
-    -webkit-box-shadow: 0 0 8px grey;
-            box-shadow: 0 0 8px grey;
-    font-size: 20px;
-    background-color: rgba(72, 188, 245, 0.6);
-    color: darkblue; }
-  .slider__btn--left {
-    left: 0;
-    -webkit-transform: skewY(-35deg);
-            transform: skewY(-35deg); }
-  .slider__btn--right {
-    -webkit-transform: skewY(35deg);
-            transform: skewY(35deg);
-    right: 0; }
-  .slider__text {
-    margin-top: 15px;
-    width: 640px;
-    height: 100px;
-    border: 2px solid #71add0; }
-  .slider__text p {
-    font-size: 24px;
-    text-align: center;
-    padding: 30px 10px; }
+  background-color: cyan; }
 
 .footer {
   display: -webkit-box;

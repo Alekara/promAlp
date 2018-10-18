@@ -1,4 +1,54 @@
 .objects {
   width: 100%;
-  padding: 5%;
+  height: calc(100vh - 60px);  //вручную подставить значение переменной $header-height
+  padding: 3%;
+  padding-left: 8%;
+  background-color: yellow;
+  position: relative;
+
+  &__heading {
+    text-align: left;
+
+  }
+
+  &__description {
+    height: 100%;
+    width: 80%;
+    background-color: pink;
+    padding: 3%;
+  }
+
+  &__slider {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: calc(50% - 200px);
+    right: 8%;
+    background-color: #fff;
+    border: 3px solid $color-primary;
+
+  }
+
+  &__btn {
+    position: absolute;
+    right: 8%;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      transform: rotate(90deg) scale(1.1);
+    }
+  }
+
+  &__btn--up {
+    top: 8%;
+    transform: rotate(90deg);
+  }
+
+  &__btn--down {
+    bottom: 8%;
+    transform: rotate(90deg);
+  }
+
+
 }
