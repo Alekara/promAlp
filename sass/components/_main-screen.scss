@@ -1,8 +1,9 @@
 .main-screen {
   min-height: 100vh;
-  background: linear-gradient(to bottom right, rgba(141, 182, 215, .6), rgba(202, 204, 205, .6)),
-    url(img/bg.jpg) top right no-repeat;
+  background: linear-gradient(to bottom right, rgba(141, 182, 215, .2), rgba(202, 204, 205, .2)),
+    url(img/ren4.jpg) top right no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   min-height: calc(100vh - 60px);  //подставить значение $header-height, так как автоматически не считает
   // clip-path: polygon(0 0, 100% 0, 100% 98%, 0 90%);
   display: flex;

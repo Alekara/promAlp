@@ -1,0 +1,31 @@
+.stats {
+  background-color: $color-primary;
+  padding: 5% 2%;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+  }
+
+  &__item {
+    width: 20%;
+    text-align: center;
+    color: $color-white;
+
+    &--number {
+
+      font-size: 44px;
+      line-height: 36px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
+    }
+
+    &--text {
+      font-size: 18px;
+
+    }
+  }
+}
