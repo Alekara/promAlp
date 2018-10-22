@@ -37,13 +37,39 @@
 
   &__right {
     width: 42%;
+//    background-color: pink;
+    position: relative;
     padding: 2%;
+//    background: 
+//      linear-gradient(to bottom, rgba(100, 105, 113, 0.76), rgba(139, 141, 142, 0.76)),
+//      url(img/greetings.jpg) 0 0 no-repeat;
   }
 
   &__img {
-    box-shadow: 25px -25px 0 $color-blue;
+//    box-shadow: 25px -25px 0 $color-blue;
     margin: 40px auto;
-    width: 480px;
+//    width: 480px;
     display: block;
+    
+    
+    
+    &--1 {
+      filter: saturate(10%) opacity(75%);
+//        grayscale(100%)  contrast(150%);
+      position: absolute;
+//      z-index: -1;
+      top: 10px;
+      right: 40px;
+    }
+    
+    &--2 {
+      position: relative;
+      right: 10px;
+      top: 10px;
+      border-top: 6px solid $color-white;
+      border-right: 6px solid $color-white;
+      filter: brightness(110%);
+      
+    }
   }
 }
