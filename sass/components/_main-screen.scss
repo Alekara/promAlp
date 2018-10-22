@@ -1,14 +1,27 @@
 .main-screen {
-  min-height: 100vh;
-  background: linear-gradient(to bottom right, rgba(141, 182, 215, .2), rgba(202, 204, 205, .2)),
-    url(img/ren4.jpg) top right no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+//  min-height: 100vh;
   min-height: calc(100vh - 60px);  //подставить значение $header-height, так как автоматически не считает
-  // clip-path: polygon(0 0, 100% 0, 100% 98%, 0 90%);
   display: flex;
   justify-content: center;
   align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    background: linear-gradient(to bottom right, rgba(141, 182, 215, .2), rgba(202, 204, 205, .2)),
+    url(img/ren4.jpg) top right no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0;
+    animation: main-screen-animation 1.5s .1s cubic-bezier(0, .5, 0, 1) forwards;
+  }
 
   &__text {
     padding: 0 20px;
@@ -35,5 +48,18 @@
     display: block;
     font-size: 46px;
     font-weight: 700;
+  }
+}
+
+@keyframes main-screen-animation {
+  
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -44,7 +44,10 @@ html, body, p, ul, li, h1, h2, h3, h4 {
     min-height: 60px; }
   .main-nav__item {
     -webkit-transition: all .5s;
-    transition: all .5s; }
+    transition: all .5s;
+    opacity: 0;
+    -webkit-animation: nav-animation .8s .3s ease-out forwards;
+            animation: nav-animation .8s .3s ease-out forwards; }
   .main-nav__item:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
@@ -58,12 +61,34 @@ html, body, p, ul, li, h1, h2, h3, h4 {
 .main {
   display: block; }
 
+@-webkit-keyframes nav-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px); }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes nav-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px); }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 .main-screen {
-  min-height: 100vh;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(141, 182, 215, 0.2)), to(rgba(202, 204, 205, 0.2))), url(img/ren4.jpg) top right no-repeat;
-  background: linear-gradient(to bottom right, rgba(141, 182, 215, 0.2), rgba(202, 204, 205, 0.2)), url(img/ren4.jpg) top right no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: calc(100vh - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +98,25 @@ html, body, p, ul, li, h1, h2, h3, h4 {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+  position: relative; }
+  .main-screen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(141, 182, 215, 0.2)), to(rgba(202, 204, 205, 0.2))), url(img/ren4.jpg) top right no-repeat;
+    background: linear-gradient(to bottom right, rgba(141, 182, 215, 0.2), rgba(202, 204, 205, 0.2)), url(img/ren4.jpg) top right no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0;
+    -webkit-animation: main-screen-animation 1.5s 0.1s cubic-bezier(0, 0.5, 0, 1) forwards;
+            animation: main-screen-animation 1.5s 0.1s cubic-bezier(0, 0.5, 0, 1) forwards; }
   .main-screen__text {
     padding: 0 20px;
     color: #fff;
@@ -94,6 +137,25 @@ html, body, p, ul, li, h1, h2, h3, h4 {
     font-size: 46px;
     font-weight: 700; }
 
+@-webkit-keyframes main-screen-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes main-screen-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
