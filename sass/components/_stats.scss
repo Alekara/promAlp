@@ -1,6 +1,16 @@
 .stats {
   background-color: $color-primary;
-  padding: 5% 2%;
+  padding: 5% 2% 7%;
+  position: relative;
+  margin-bottom: $section-mb;
+  
+  
+  &__heading {
+    color: $color-white;
+    text-align: center;
+    margin-bottom: 100px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
+  }
 
   &__list {
     display: flex;
@@ -27,5 +37,14 @@
       font-size: 18px;
 
     }
+  }
+  
+  &__decoration {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    width: 100px;
+    height: 100px;
+    background: url(img/stats-deco.png) center center no-repeat;
   }
 }

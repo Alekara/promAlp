@@ -1,220 +1,248 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <title>Промышленный альпинизм</title>
 </head>
+
 <body>
 
-    <header class="main-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#main-screen">Главная</a>
+  <header class="main-header">
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#main-screen">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#why-us">Преимущества</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#services">Услуги</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">О нас</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="main-screen" id="main-screen">
+      <div class="main-screen__text">
+        <h1 class="main-screen__heading">
+          <span class="main-screen__accent">Промышленные альпинисты?<br></span> Срочно?</h1>
+        <span class="main-screen__sub">Наша работа <span class="main-screen__accent">всегда на высоте!</span></span>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__left">
+        <h2 class="about__heading h2-heading">Мы влюблены в высоту</h2>
+        <!-- Без этого никогда не стать хорошим промышленным альпинистом. Там, где другие испугались бы, мы находимся в своей стихии. Гостиницы, стадионы, музеи, аэропорты, торговые центры, жилые дома, водонапорные башни - на здания и конструкции мы привыкли смотреть с ракурсов, недоступных обычным людям. 
+          
+          Альпинизм для нас - это больше, чем "просто работа". Мы этим живем и дышим. В свободное время мы покоряем еще более высокие вершины (Эльбрус, например). 
+          
+          Там, где смелости и опыта недостаточно, нам помогает наше отличное оборудование.
+
+
+
+        Для нас альпинизм - не -->
+
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laborum voluptatum in quisquam pariatur, consequuntur! Recusandae praesentium voluptates error necessitatibus eaque voluptas harum rem cumque saepe vel. Possimus nisi assumenda itaque corporis quia commodi voluptates quisquam sapiente repellat, minus optio deserunt, magnam doloribus et delectus numquam perspiciatis autem. Voluptas quam culpa amet id. Eligendi mollitia quam delectus sequi, impedit et illum ea. Asperiores totam aut neque dolorum nulla sint, a autem quidem maxime beatae illo ea perferendis, velit debitis itaque, magni expedita excepturi alias sapiente. Quisquam voluptates adipisci quia at totam fuga voluptatem, rem, dolorum asperiores error ab, voluptatibus!</p>
+
+        <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>
+      </div>
+
+      <div class="about__right">
+        <img src="img/alpinist.jpg" alt="Промышленный альпинист на работе" width="480" height="455" class="about__img            about__img--1">
+        <img src="img/greetings.jpg" alt="Промышленный альпинист на работе" width="480" height="455" class="about__img            about__img--2">
+      </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+      <h2 class="why-us__heading h2-heading">Почему именно мы?</h2>
+<!--      <div class="why-us__container">-->
+        <ul class="why-us__list">
+          <li class="why-us__item why-us__item--pictures">
+            <h3 class="why-us__title">Дистанционная оценка сроков и стоимости</h3>
+            <p class="why-us__content">Предварительный расчет по фотографиям и/или проекту, окончательный - после визуального осмотра объекта</p>
           </li>
-          <li class="main-nav__item">
-            <a href="#why-us">Преимущества</a>
+
+          <li class="why-us__item why-us__item--profile-male">
+            <h3 class="why-us__title">Универсальные специалисты</h3>
+            <p class="why-us__content">Многолетний опыт спортивного и промышленного альпинизма делает нас компетентными в любых высотных работах</p>
           </li>
-          <li class="main-nav__item">
-            <a href="#services">Услуги</a>
+
+          <li class="why-us__item why-us__item--hourglass">
+            <h3 class="why-us__title">Мы не заставляем <br>долго ждать</h3>
+            <p class="why-us__content">Наши специалисты приступят к работе немедленно: на подготовку снаряжения и уточнение задач уйдет не более 30 минут
+            </p>
           </li>
-          <li class="main-nav__item">
-            <a href="#">О нас</a>
+
+          <li class="why-us__item why-us__item--gears">
+            <h3 class="why-us__title">Работа в любых технических условиях</h3>
+            <p class="why-us__content">Даже в ограниченном пространстве плотной городской застройки, где нельзя использовать специальную технику</p>
           </li>
+
+          <li class="why-us__item why-us__item--wallet">
+            <h3 class="why-us__title">Цены ниже, чем у конкурентов</h3>
+            <p class="why-us__content">Ведь мы не нуждаемся в строительных лесах, автовышках и технике</p>
+          </li>
+
+          <li class="why-us__item why-us__item--tools-2">
+            <h3 class="why-us__title">Профессиональное снаряжение</h3>
+            <p class="why-us__content">У нас только сертифицированное персональное снаряжение и самое надежное оборудование</p>
+          </li>
+
+          <li class="why-us__item why-us__item--global">
+            <h3 class="why-us__title">Работаем<br> по всей Беларуси</h3>
+            <p class="why-us__content">Мы оказываем услуги не только в Минске, но и в любой точке республики
+            </p>
+          </li>
+
+          <li class="why-us__item why-us__item--heart">
+            <h3 class="why-us__title">Наша работа – наша страсть!</h3>
+            <p class="why-us__content">Мы не просто выполняем опасную работу за деньги. Даже в свободное время мы покоряем вершины (например, Эльбрус)</p>
+          </li>
+
+
+
+
+
         </ul>
-      </nav>
-    </header>
+<!--      </div>-->
+    </section>
 
-    <main class="main">
+    <section class="about">
+      <div class="about__left">
+        <h2 class="about__heading h2-heading">Сроки совсем горят?</h2>
+        <p class="about__text">Без паники! Мы усилим команду еще несколькими первоклассными промышленными альпинистами и выполним задачу так быстро, как только возможно.</p>
 
-      <section class="main-screen" id="main-screen">
-          <div class="main-screen__text">
-            <h1 class="main-screen__heading">
-              <span class="main-screen__accent">Промышленные альпинисты?</span> Срочно?</h1>
-            <span class="main-screen__sub">Наша работа <span class="main-screen__accent">всегда на высоте!</span></span>
-          </div>
-      </section>
+        <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>
+      </div>
 
-      <section class="about">
-        <div class="about__left">
-          <h2 class="about__title">Мы влюблены в высоту</h2>
-          <!-- Мы влюблены в высоту. Гостиницы, стадионы, музеи, аэропорты, торговые центры, жилые дома - на все эти здания мы привыкли смотреть с ракурсов, недоступных обычным людям.
+      <div class="about__right">
+        <img src="img/more-alps.jpg" alt="Промышленный альпинист на работе" width="480" height="455" class="about__img            about__img--2 about__img--shadow">
+      </div>
 
-          нет таких высот, которые нам бы не покорились.
+    </section>
 
+    <section class="stats">
+      <h2 class="stats__heading h2-heading">Наша работа в цифрах</h2>
+      <ul class="stats__list">
+        <li class="stats__item">
+          <p class="stats__item--number">13</p>
+          <p class="stats__item--text">лет работы на высоте</p>
+        </li>
+        <li class="stats__item">
+          <p class="stats__item--number"> > 200</p>
+          <p class="stats__item--text">заказчиков довольны результатами нашего труда</p>
+        </li>
+        <li class="stats__item">
+          <p class="stats__item--number">10</p>
+          <p class="stats__item--text">профессионалов в нашей команде</p>
+        </li>
+        <li class="stats__item">
+          <p class="stats__item--number">до 5</p>
+          <p class="stats__item--text">лет гарантии в зависимости от объекта</p>
+        </li>
+      </ul>
 
+      <div class="stats__decoration">
 
-        Для нас альпинизм - не "просто работа". Мы этим живем и дышим.-->
+      </div>
+    </section>
 
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laborum voluptatum in quisquam pariatur, consequuntur! Recusandae praesentium voluptates error necessitatibus eaque voluptas harum rem cumque saepe vel. Possimus nisi assumenda itaque corporis quia commodi voluptates quisquam sapiente repellat, minus optio deserunt, magnam doloribus et delectus numquam perspiciatis autem. Voluptas quam culpa amet id. Eligendi mollitia quam delectus sequi, impedit et illum ea. Asperiores totam aut neque dolorum nulla sint, a autem quidem maxime beatae illo ea perferendis, velit debitis itaque, magni expedita excepturi alias sapiente. Quisquam voluptates adipisci quia at totam fuga voluptatem, rem, dolorum asperiores error ab, voluptatibus!
-        </div>
+    <section class="order" id="order">
+      <div class="order__photo-card">
+        <img src="img/call-us.jpg" class="order__photo">
+      </div>
+      <div class="order__text">
+        <h2 class="order__heading h2-heading">Позвоните нам прямо сейчас!</h2>
+        <p class="order__info">И закажите услуги промышленных альпинистов или получите бесплатную консультацию по вашей проблеме. Свяжитесь с нами при помощи Viber, если для вас это удобнее.</p>
+        <p class="order__tel">+375 29 753-23-27</p>
+      </div>
+    </section>
 
-        <div class="about__right">
-          <img src="img/greetings.jpg" alt="Промышленный альпинист на работе" width="480" height="455" class="about__img            about__img--1">
-          <img src="img/greetings.jpg" alt="Промышленный альпинист на работе" width="480" height="455" class="about__img            about__img--2">
-        </div>
-      </section>
-
-      <section class="why-us" id="why-us">
-          <h2 class="why-us__heading h2-heading">Почему именно мы?</h2>
-          <div class="why-us__container">
-            <ul class="why-us__list">
-              <li class="why-us__item why-us__item--pictures">
-                <h3 class="why-us__title">Дистанционная оценка сроков и стоимости</h3>
-                <p class="why-us__content">Предварительный расчет по фотографиям и/или проекту. Окончательный - после визуального осмотра объекта</p>
-              </li>
-
-              <li class="why-us__item why-us__item--profile-male">
-                <h3 class="why-us__title">Универсальные специалисты</h3>
-                <p class="why-us__content">С нашим многолетним опытом спортивного и промышленного альпинизма не найдется такого вида работ, с которым бы мы не справились</p>
-              </li>
-
-              <li class="why-us__item why-us__item--tools-2">
-                <h3 class="why-us__title">Профессиональное снаряжение</h3>
-                <p class="why-us__content">У нас только сертифицированное персональное снаряжение и надежное оборудование</p>
-              </li>
-
-              <li class="why-us__item why-us__item--gears">
-                <h3 class="why-us__title">Работа в любых технических условиях</h3>
-                <p class="why-us__content">В том числе в ограниченном пространстве плотной городской застройки на высоте, где нет возможности использовать специальную технику</p>
-              </li>
-
-              <li class="why-us__item why-us__item--wallet">
-                <h3 class="why-us__title">Цены ниже, чем у конкурентов</h3>
-                <p class="why-us__content">Себестоимость наших работ обычно значительно ниже аналогичных с использованием строительных лесов, техники и автовышек</p>
-              </li>
-
-              <li class="why-us__item why-us__item--hourglass">
-                <h3 class="why-us__title">Мы не заставляем <br>долго ждать</h3>
-                <p class="why-us__content">Наши специалисты приступят к работе немедленно: на подготовку снаряжения и уточнение задач уйдет не более 30 минут
-                </p>
-              </li>
-
-              <li class="why-us__item why-us__item--global">
-                <h3 class="why-us__title">Работаем<br> по всей Беларуси</h3>
-                <p class="why-us__content">Мы оказываем услуги не только в Минске, но и в любой точке республики
-                </p>
-              </li>
-
-              <li class="why-us__item why-us__item--heart">
-                <h3 class="why-us__title">Наша работа – наша страсть!</h3>
-                <p class="why-us__content">Мы не просто выполняем опасную работу за деньги. Даже в свободное время мы покоряем вершины (например, Эльбрус)</p>
-              </li>
-
-
-              <!-- Нужно еще быстрее? Мы пригласим еще больше опытных альпинистов, чтобы  -->
-
-
-
-            </ul>
-          </div>
-      </section>
-
-      <section class="stats">
-        <h2 class="stats__heading h2-heading">Наша работа в цифрах</h2>
-        <ul class="stats__list">
-          <li class="stats__item">
-            <p class="stats__item--number">13</p>
-            <p class="stats__item--text">лет работы на высоте</p>
-          </li>
-          <li class="stats__item">
-            <p class="stats__item--number"> > 200</p>
-            <p class="stats__item--text">заказчиков довольны результатами нашего труда</p>
-          </li>
-          <li class="stats__item">
-            <p class="stats__item--number">10</p>
-            <p class="stats__item--text">профессионалов в нашей команде</p>
-          </li>
-          <li class="stats__item">
-            <p class="stats__item--number">до 5</p>
-            <p class="stats__item--text">лет гарантии в зависимости от объекта</p>
-          </li>
+    <section class="services" id="services">
+      <div class="services__content">
+        <h2 class="services__heading h2-heading">Наши услуги:</h2>
+        <ul class="services__list">
+          <li class="services__item">монтаж или демонтаж металлических конструкций (балки, фермы, ограждения, кронштейны, закладные, башенные краны и прочее);</li>
+          <li class="services__item">монтаж рекламных баннеров, иллюминации, подсветки, светодиодных лент;</li>
+          <li class="services__item">монтаж пожарных извещателей, сигнализации и систем видеонаблюдения;</li>
+          <li class="services__item">монтаж блоков кондиционеров на фасадах здания;</li>
+          <li class="services__item">подъем или спуск негабаритных грузов через окно;</li>
+          <li class="services__item">обслуживание вышек связи (окраска и монтаж оборудования);</li>
+          <li class="services__item">герметизация межпанельных стыков, швов;</li>
+          <li class="services__item">очистка кровли от снега и наледи;</li>
+          <li class="services__item">окраска водонапорных башен;</li>
+          <li class="services__item">мойка окон и витражей;</li>
+          <li class="services__item">окраска фасадов;</li>
+          <li class="services__item">кровельные работы.</li>
         </ul>
-      </section>
-
-      <section class="services" id="services">
-        <div class="services__content">
-          <h2 class="services__heading h2-heading">Наши услуги:</h2>
-          <ul class="services__list">
-            <li class="services__item">монтаж или демонтаж металлических конструкций (балки, фермы, ограждения, кронштейны, закладные, башенные краны и прочее);</li>
-            <li class="services__item">монтаж рекламных баннеров, иллюминации, подсветки, светодиодных лент;</li>
-            <li class="services__item">монтаж блоков кондиционеров на фасадах здания;</li>
-            <li class="services__item">подъем или спуск негабаритных грузов через окно;</li>
-            <li class="services__item">обслуживание вышек связи (окраска и монтаж оборудования);</li>
-            <li class="services__item">герметизация межпанельных стыков, швов;</li>
-            <li class="services__item">очистка кровли от снега и наледи;</li>
-            <li class="services__item">мойка окон и витражей;</li>
-            <li class="services__item">окраска фасадов;</li>
-            <li class="services__item">кровельные работы.</li>
-          </ul>
-        </div>
-      </section>
+      </div>
+    </section>
 
 
-      <section class="objects">
-
+    <section class="objects">
+      <div class="objects__text">
+        <h2 class="objects__heading h2-heading">Где мы только не работали!</h2>
         <div class="objects__description">
-          <h2 class="objects__heading h2-heading">Нам доверили такие объекты, как:</h2>
           <h3 class="objects__name"></h3>
           <p class="objects__task"></p>
-
         </div>
+        
+      </div>
 
-        <div class="objects__slider slider">
+      <div class="objects__slider">
+        <div class="slider">
+          <button class="slider__btn slider__btn--up" type="button">
+            <img class="slider__arrow" src="img/up.svg" alt="">
+          </button>
+
           <div class="slider__container">
             <div class="slider__stripe">
-              <img src="img/aeroport.jpg" width="600" height="400" alt="">
-              <img src="img/victoria.jpg" width="600" height="400" alt="">
-              <img src="img/dinamo.jpg" width="600" height="400" alt="">
-              <img src="img/mir.jpg" width="600" height="400" alt="">
+              <img src="img/aeroport.jpg" width="600" height="400" alt="Аэропорт Минск-2">
+              <img src="img/victoria.jpg" width="600" height="400" alt="Гостиница Виктория">
+              <img src="img/dinamo.jpg" width="600" height="400" alt="Стадион Динамо">
+              <img src="img/mir.jpg" width="600" height="400" alt="Кинотеатр Мир">
+              <img src="img/museum.jpg" width="600" height="400" alt="Музей ВОВ">
+              <img src="img/renessans.jpg" width="600" height="400" alt="Гостиница Ренессанс">
+              <img src="img/smorgon.jpg" width="600" height="400" alt="Производственный логистический комплекс в г. Сморгонь">
             </div>
           </div>
 
+          <button class="slider__btn slider__btn--down" type="button">
+            <img class="slider__arrow" src="img/down.svg" alt="">
+          </button>
         </div>
-
-        <button class="objects__btn objects__btn--up" type="button">
-          <img src="img/left-arrow.svg" alt="">
-        </button>
-        <button class="objects__btn objects__btn--down" type="button">
-          <img src="img/right-arrow.svg" alt="">
-        </button>
-
-      </section>
-
-      <!-- <section class="objects">
-        <div class="objects__slider slider">
-          <div class="slider__text">
-
-          </div>
-
-
-          <div class="slider__text">
-            <p>
-
-            </p>
-          </div>
-        </div>
-      </section> -->
-
-    </main>
-    <footer class="footer">
-      <div class="footer__company">
-        <p>ИП Акиншев Алексей Александрович</p>
-        <p>Свидетельство о государственной регистрации <br>ИП УНП 191812715 от 11.12.2012</p>
       </div>
-      <div class="footer__contacts">
-        <b>Контакты:</b>
-        <p>220112, г. Минск, ул. Прушинских, д.74, кв. 23<br>
-           тел., Viber +375 29 753-23-27<br>
-           e-mail: 7532327@mail.ru
-        </p>
-      </div>
-    </footer>
+
+    </section>
+
+
+  </main>
+  <footer class="footer">
+    <div class="footer__company">
+      <p>ИП Акиншев Алексей Александрович</p>
+      <p>Свидетельство о государственной регистрации <br>ИП УНП 191812715 от 11.12.2012</p>
+    </div>
+    <div class="footer__contacts">
+      <b>Контакты:</b>
+      <p>220112, г. Минск, ул. Прушинских, д.74, кв. 23<br>
+        тел., Viber +375 29 753-23-27<br>
+        e-mail: 7532327@mail.ru
+      </p>
+    </div>
+  </footer>
 
 
 
@@ -225,4 +253,5 @@
   </script>
 
 </body>
+
 </html>

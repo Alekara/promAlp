@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: Volkorn, sans-serif;
-  padding-top: 20px;
+  font-size: 20px;
 }
 
 *, *::before, *::after {
@@ -18,8 +18,9 @@ html, body, p, ul, li, h1, h2, h3, h4 {
 }
 
 .h2-heading {
-  font-size: 32px;
+  font-size: 40px;
   text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 30px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  font-family: 'Roboto Slab', serif;
 }

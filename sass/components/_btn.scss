@@ -1,0 +1,17 @@
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 20px;
+  
+  &__order {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 20px 60px;
+    height: 60px;
+    
+    &:hover {
+      background-color: $color-blue;
+    }
+  }
+}

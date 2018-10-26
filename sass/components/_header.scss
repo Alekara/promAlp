@@ -16,7 +16,6 @@
 
 
   &__list {
-    max-width: 1400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,13 +24,8 @@
   }
 
   &__item {
-    transition: all .5s;
     opacity: 0;
     animation: nav-animation .8s .3s ease-out forwards;
-  }
-
-  &__item:hover {
-    transform: scale(1.2);
   }
 
   &__item a {
@@ -40,6 +34,10 @@
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
+    
+    &:hover {
+      color: #b8edf7;
+    }
   }
 }
 
