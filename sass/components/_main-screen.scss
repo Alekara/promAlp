@@ -1,13 +1,10 @@
 .main-screen {
-  min-height: calc(100vh - 60px);  //подставить значение $header-height, так как автоматически не считает
+  min-height: calc(100vh - 60px);  
+    //подставить значение $header-height, так как автоматически не считает
+  width: 100%;
   margin-bottom: $section-mb;
-  
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 97%);
   position: relative;
-  padding: 2%;
+  overflow: hidden;
   
   &::before {
     content: "";
@@ -17,68 +14,98 @@
       right: 0;
       left: 0;
       z-index: -1;
-    background: linear-gradient(to bottom right, rgba(141, 182, 215, .1), rgba(202, 204, 205, .1)),
-    url(img/ren4.jpg) top left no-repeat;
+    background: 
+      linear-gradient(to bottom right, transparent, rgba($color-primary, .3)),
+      url(img/bg.jpg) top left no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    opacity: 0;
-    animation: main-screen-animation 1.5s .1s cubic-bezier(0, .5, 0, 1) forwards;
-  }
-
-  &__text {
-    background-color: rgba(0, 0, 0, .4);
-    padding: 20px;
-    color: $color-white;
-    text-shadow: 0 5px 35px #000;
-    width: 1100px;
-//    margin-right: 12%;
-    margin-left: 30%;
-    margin-top: 35vh;
-    border-radius: 15px;
-    text-align: center;
-    position: relative;
+    transform: scale(1.1);
+    animation: bg-scale 1.5s ease-out forwards;
     
-    &::before {
-      content: "";
-      position: absolute;
-        top: 10%;
-        left: -50px;
-      width: 0;
-      height: 0;
-      border-top: 25px solid transparent;
-      border-right: 50px solid rgba(0, 0, 0, .4);
-      border-bottom: 25px solid transparent;
-    }
   }
-
+  
+  &__text {
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+      top: 65%;
+      right: 0;
+      bottom: 5%;
+    background-color: rgba(0, 0, 0, .3);    
+    color: $color-white;
+    text-shadow: 0 2px 10px #000;
+    text-align: center;
+  }
+  
   &__heading {
     margin-bottom: 30px;
-    font-size: 68px;
+    font-size: 74px;
     font-weight: 700;
     line-height: 1.2;
+    color: #43CBFF;
+    opacity: 0;
+    animation: heading-movement 1.5s .5s ease-out forwards;
   }
-
-  &__accent {
-    color: #5fa1ef;
-    margin-bottom: 30px;
-  }
-
+    
+    
   &__sub {
     display: block;
-    font-size: 48px;
+    font-size: 58px;
     font-weight: 700;
+    transform: translateY(400px);
+    animation: sub-movement 1.5s .1s ease-out forwards;
   }
 }
 
-@keyframes main-screen-animation {
-  
+
+@keyframes bg-scale {
   0% {
-    opacity: 0;
-    transform: translateY(-50px);
+    transform: scale(1.1);
   }
   
   100% {
+    transform: scale(1);
+  }  
+}
+
+@keyframes heading-movement {
+  100% {
     opacity: 1;
+  }
+}
+
+@keyframes sub-movement {
+  100% {
     transform: translateY(0);
   }
 }
+  
+  
+
+
+//.main-screen {
+//  
+//  
+//  &::before {    
+//    
+//    
+//    opacity: 0;
+//    animation: main-screen-animation 1.5s .1s cubic-bezier(0, .5, 0, 1) forwards;
+//  }
+//
+
+//
+//  
+//
+//@keyframes main-screen-animation {
+//  
+//  0% {
+//    opacity: 0;
+//    transform: translateY(-50px);
+//  }
+//  
+//  100% {
+//    opacity: 1;
+//    transform: translateY(0);
+//  }
+//}

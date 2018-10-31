@@ -1,34 +1,38 @@
 .objects {
-  width: 100%;
-  min-height: calc(100vh - 60px);  //вручную подставить значение переменной $header-height
+  min-height: calc(100vh - 60px);
+  margin-bottom: $section-mb;
   padding: $section-padding;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+  
+  background-color: $color-primary;
   
   &__heading {
-    color: $color-primary;
+    color: $color-white;
   }
-
-  &__text {
-    width: 45%;  
-    
+  
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
   }
   
   &__description {
     background-color: rgba($color-primary, .3);
     padding: 2%;
     height: 200px;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 10px;
   }
+  
+
   
   &__name {
     margin-bottom: 30px;
     font-size: 32px;
+    color: $color-white;
   }
 
   &__task {
@@ -36,12 +40,25 @@
   }
 
   &__slider {
-    width: 600px;
-    background-color: #fff;
-    
+    width: 620px; 
   }
+}
+
+//.objects {
+
+
+  
+
+//  
+//  
+//
+
+//  
+
+//  
+
 
   
 
 
-}
+//}

@@ -1,16 +1,38 @@
-$color-blue: rgb(113, 173, 208);
-//
-//
-// $color-primary: rgb(91, 147, 200);
+//ЦВЕТА
 
-$color-primary: rgb(68, 130, 236);
-
-// rgb(72, 188, 245);
-
+$color-primary: #48c6ef;  
+$color-blue: #0987e2;
 $color-white: #fff;
 
 
-$header-height: 60px;
 
+//РАЗМЕРЫ
+$header-height: 60px;
 $section-mb: 100px;
-$section-padding: 2%;
+$section-padding: 3%;
+
+
+//ДЕКОРАЦИИ
+
+$text-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
+
+
+@mixin before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+    top: 50%;
+    left: -140px;
+  background-color: $color-blue;
+}
+
+@mixin after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+    top: 50%;
+    right: -140px;
+  background-color: $color-blue;
+}

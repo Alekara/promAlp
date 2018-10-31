@@ -5,13 +5,13 @@
   border-radius: 20px;
   
   &__order {
-    background-color: $color-primary;
-    color: $color-white;
     padding: 20px 60px;
-    height: 60px;
-    
-    &:hover {
-      background-color: $color-blue;
-    }
+    background-color: $color-blue;
+    color: $color-white;
+    align-self: center;
+  }
+  
+  &__order:hover {
+    background-color: $color-primary;
   }
 }

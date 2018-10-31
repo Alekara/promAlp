@@ -6,6 +6,7 @@ html {
 body {
   font-family: Volkorn, sans-serif;
   font-size: 20px;
+  line-height: 26px;
 }
 
 *, *::before, *::after {
@@ -17,10 +18,16 @@ html, body, p, ul, li, h1, h2, h3, h4 {
   margin: 0;
 }
 
+.main {
+  display: block;
+}
+
 .h2-heading {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 50px;
   font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 70px;
 }
