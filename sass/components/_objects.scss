@@ -19,7 +19,7 @@
   &__description {
     background-color: rgba($color-primary, .3);
     padding: 2%;
-    height: 200px;
+//    height: 300px;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -27,16 +27,17 @@
     border-radius: 10px;
   }
   
-
-  
   &__name {
     margin-bottom: 30px;
     font-size: 32px;
     color: $color-white;
+    height: 50px;
   }
 
   &__task {
     font-size: 24px;
+    margin-bottom: 80px;
+    height: 60px;
   }
 
   &__slider {
@@ -44,21 +45,18 @@
   }
 }
 
-//.objects {
 
 
-  
-
-//  
-//  
-//
-
-//  
-
-//  
-
-
-  
-
-
-//}
+@media (max-width: $mobile-width) {
+  .objects {
+    
+    &__container {
+      flex-direction: column;
+    }
+    
+    &__slider {
+      display: none; 
+    }
+    
+  }
+}

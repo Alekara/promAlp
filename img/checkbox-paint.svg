@@ -2,10 +2,10 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="1280.000000pt" height="1280.000000pt" viewBox="0 0 1280.000000 1280.000000"
+ width="30" height="30" viewBox="0 0 1280.000000 1280.000000"
  preserveAspectRatio="xMidYMid meet">
 <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+   fill="#0987e2" stroke="none">
 <path d="M10390 12240 c0 -5 5 -10 11 -10 5 0 7 5 4 10 -3 6 -8 10 -11 10 -2
 0 -4 -4 -4 -10z"/>
 <path d="M10333 12191 c-3 -11 -13 -21 -24 -24 -11 -3 -19 -14 -19 -26 0 -14

@@ -1,6 +1,5 @@
 .why-us {
-  margin-bottom: $section-mb;
-  
+  margin-bottom: $section-mb;  
   background: linear-gradient(to bottom right, rgba($color-primary, .8), rgba($color-blue, .8)),
     url(img/why-us.jpg) center no-repeat;
   background-size: cover;
@@ -32,31 +31,31 @@
     background-repeat: no-repeat;
     transition: all .5s ease-out;
     
-    &--pictures {
+    &--1 {
       background-image: url(img/pictures.svg);      
     }
 
-    &--profile-male {
+    &--2 {
       background-image: url(img/profile-male.svg);
     }
 
-    &--hourglass {
-      background-image: url(img/hourglass.svg);
+    &--3 {
+      background-image: url(img/clock.svg);
     }
 
-    &--gears {
+    &--4 {
       background-image: url(img/gears.svg);
     }
 
-    &--wallet {
+    &--5 {
       background-image: url(img/wallet.svg);
     }
 
-    &--tools-2 {
+    &--6 {
       background-image: url(img/tools-2.svg);
     }
 
-    &--global {
+    &--7 {
       background-image: url(img/global.svg);
     }
   }
@@ -93,5 +92,52 @@
 //  }
 //  
 
+
+@media (max-width: $mobile-width) {
+  .why-us {
+//    height: 100vh;
+    position: relative;
+    
+    &__list {
+      padding: 10% 5% 10%;
+    }
+    
+    &__item {
+      padding: 100px 10% 8%;
+      display: none;
+      background-position: center 20px;
+      
+      &--1 {
+        display: block;
+      }
+    }
+    
+    &__item:hover {
+      transform: translateX(0);
+    }
+    
+    &__left-arrow {
+      width: 52px;
+      height: 52px;
+      position: absolute;
+        top: 33%;
+        left: 25%;
+      background: url(img/left-arrow.svg) no-repeat 0 0;
+    }
+    
+    &__right-arrow {
+      width: 52px;
+      height: 52px;
+      position: absolute;
+        top: 33%;
+        right: 25%;
+      background: url(img/right-arrow.svg) no-repeat 0 0;
+    }
+    
+    
+
+
+  }
+}
 
 

@@ -1,37 +1,27 @@
+.order {
+  
+  &__info {
+    margin-bottom: 30px;
+  }
+}
+
 //.order {
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//  width: 100%;
-//  padding: 2%;
-//  margin-bottom: $section-mb;
+  
+
 //  
-//  &__photo-card {
-//    margin-right: 5%;
-//  }
 //  
-//  &__photo {    
-//    border-radius: 50%;
-//    overflow: hidden;
-//    box-shadow: 0 0 15px $color-primary;
-//    transition: all 1s ease-out;
-//    
-//    &:hover {
-//      transform: scale(1.1);
-//    }
+//  
+//  
+
 //  }
 //  
 //  &__text {
 //    width: 50%;
 //  }
 //  
-//  &__heading {
-//    color: $color-primary;
-//  }
+
 //  
-//  &__info {
-//    margin-bottom: 30px;
-//  }
+
 //  
 //  &__tel {
 //    height: 100px;

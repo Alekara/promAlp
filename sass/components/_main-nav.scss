@@ -61,6 +61,22 @@
 //  }
 
 
+
+@media (max-width: $mobile-width) {
+  .main-nav {
+    display: none;
+    
+    &__list {
+      flex-direction: column;
+    }
+    
+    &__item:hover::after {
+      display: none;
+    }
+  }
+}
+
+
 @keyframes link-hover {
   0%, 10% {
     width: 0;

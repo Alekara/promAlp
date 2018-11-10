@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-
 }
 
 body {
@@ -30,4 +29,12 @@ html, body, p, ul, li, h1, h2, h3, h4 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 70px;
+}
+
+
+@media (max-width: $mobile-width) {
+  .h2-heading {
+    margin-bottom: 80px;
+    
+  }
 }

@@ -3,3 +3,9 @@
 
 }
 
+@media (max-width: $mobile-width) {
+  .main-header {
+    background-color: transparent;
+  }
+}
+

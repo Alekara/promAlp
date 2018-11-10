@@ -24,12 +24,17 @@
   }
   
   &__list {
-
+    list-style: none;
+  }
+  
+  &__item {
+    padding-left: 40px;
+    background: url(img/checkbox-paint.svg) 0 center no-repeat;
+    
   }
   
   &__img {
-
-
+    border-radius: 50%;
   }
   
 }
@@ -64,3 +69,22 @@
 //
 
 //}
+
+
+@media (max-width: $mobile-width) {
+  .services {
+
+    &__heading::before {
+      display: none;
+    }
+
+    &__heading::after {
+      display: none;
+    }
+    
+    &__item {
+      margin-bottom: 20px;
+    }
+
+  }
+}
