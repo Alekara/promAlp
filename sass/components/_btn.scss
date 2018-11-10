@@ -2,16 +2,27 @@
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 30px;
   
   &__order {
-    padding: 20px 60px;
-    background-color: $color-blue;
-    color: $color-white;
+    padding: 30px 60px;
     align-self: center;
+    background-color: #f1364b;
+    border: 2px solid #f1364b;
+    color: $color-white;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px #7e7171;
+    transition: .3s ease;
   }
   
   &__order:hover {
-    background-color: $color-primary;
+    background-color: transparent;
+    color: #f1364b;
+    
+  }
+  
+  &__order:active {
+    box-shadow: 1px 1px 2px #7e7171;
+    transform: translateY(2px);
   }
 }

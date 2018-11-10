@@ -48,20 +48,20 @@
   </section>
 
   <section class="about" id="about">
-    <h2 class="about__heading h2-heading">Мы влюблены в высоту</h2>
-   
+    <h2 class="about__heading h2-heading">Мы влюблены в высоту</h2>   
     <div class="about__container">
       <div class="about__left">
         <img class="about__img about__img--1" src="img/greetings.jpg" alt="Промышленный альпинист на работе" width="480" height="455">
-        <img class="about__img about__img--2" src="img/alpinist.jpg" alt="Промышленный альпинист в горах" width="480" height="455">
-        
+        <img class="about__img about__img--2" src="img/alpinist.jpg" alt="Промышленный альпинист в горах" width="480" height="455">        
       </div>
+      
       <div class="about__right">        
         <p class="about__text">Для нас альпинизм - больше, чем "просто работа". Это то, чем мы живем и дышим. Даже свободное время мы покоряем вершины, только уже горные. Мы были на Эльбрусе, и для нас это далеко не предел. Ведь там, где другие испугались бы, мы находимся в своей стихии. </p>
         <p class="about__text"> Гостиницы, стадионы, музеи, аэропорты, торговые центры, жилые дома, водонапорные башни - на все это мы, промышленные альпинисты, привыкли смотреть с ракурсов, недоступных обычным людям. Разумеется, одной смелости здесь недостаточно, гораздо большую роль играют сноровка, опыт и отличное оборудование. Все это у нас тоже есть.</p>
-        <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>     
+             
       </div>
     </div>
+    <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>
   </section>
 
     <section class="why-us" id="why-us">
@@ -111,15 +111,13 @@
         </div>
     </section>
     
-    <section class="services" id="services">
+    <section class="services about" id="services">
       <h2 class="services__heading h2-heading">Наши услуги:</h2>
-      <div class="services__content about__container">
-        <div class="about__left">
-          <picture>
-            <source media="(min-width: 600px)" srcset="img/services.jpg">
-            <img class="about__img services__img" src="img/services-mobile.jpg" alt="Промышленный альпинист на работе">  
-          </picture>
-        </div>
+      <div class="about__container">
+        <picture class="about__left">
+          <source media="(min-width: 600px)" srcset="img/services.jpg">
+          <img class="about__img" src="img/services-mobile.jpg" alt="Промышленный альпинист на работе">  
+        </picture>
 
         <ul class="services__list about__right">
           <li class="services__item">монтаж или демонтаж металлических конструкций (балки, фермы, ограждения, кронштейны, закладные, башенные краны и прочее);</li>
@@ -132,7 +130,9 @@
           <li class="services__item">очистка кровли от снега и наледи;</li>
           <li class="services__item">окраска водонапорных башен;</li>
           <li class="services__item">мойка окон и витражей;</li>
+          <li class="services__item">монтаж вентфасада;</li>
           <li class="services__item">окраска фасадов;</li>
+          <li class="services__item">монтаж витражей;</li>
           <li class="services__item">кровельные работы.</li>
         </ul>
       </div>
@@ -168,13 +168,14 @@
 
           <!--        НУЖНЫ ЛИ ТУТ ВООБЩЕ ЭТИ КОНТЕЙНЕРЫ? ПРИ ТЕГЕ ПИКЧА ОНИ МЕШАЮТ ЦЕНТРОВКЕ!!-->
 
-          <img class="about__img" src="img/more-alps.jpg" alt="Промышленный альпинист на работе" width="480" height="455">
+          <img class="about__img about__img--3" src="img/more-alps.jpg" alt="Промышленный альпинист на работе" width="480" height="455">
         </div>
         <div class="about__right">
-          <p class="about__text">Без паники! По вашему желанию мы усилим команду еще несколькими первоклассными промышленными альпинистами и выполним задачу в максимально короткие сроки.</p>          
-          <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>
+          <p class="about__text">Без паники!</p>
+          <p class="about__text">По вашему желанию мы усилим команду еще несколькими первоклассными промышленными альпинистами и выполним задачу в максимально короткие сроки.</p>        
         </div>
-      </div>      
+      </div>
+      <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>   
     </section>    
     
     <section class="objects">

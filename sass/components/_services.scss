@@ -1,14 +1,6 @@
 .services {
-  margin-bottom: $section-mb;
   padding: $section-padding;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  &__content {
-    
-  }
-  
+
   
   &__heading {
     color: $color-blue;
@@ -31,10 +23,6 @@
     padding-left: 40px;
     background: url(img/checkbox-paint.svg) 0 center no-repeat;
     
-  }
-  
-  &__img {
-    border-radius: 50%;
   }
   
 }
