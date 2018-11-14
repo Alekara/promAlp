@@ -1,12 +1,25 @@
 .objects {
   min-height: calc(100vh - 60px);
   margin-bottom: $section-mb;
-  padding: $section-padding;
-  
+  padding: $section-padding;  
   background-color: $color-primary;
   
   &__heading {
     color: $color-white;
+    position: relative;
+  }
+  
+  &__heading::before,
+  &__heading::after {
+    display: none;
+  }
+  
+  &__note {
+    width: 350px;
+    margin: -60px auto 70px;
+    display: block;
+    color: $color-white;
+    font-size: 24px;
   }
   
   &__container {
@@ -46,6 +59,12 @@
 }
 
 
+@media (max-width: $tablet-width) {
+  .objects {
+//    display: none;
+  }
+}
+
 
 @media (max-width: $mobile-width) {
   .objects {
@@ -55,8 +74,15 @@
     }
     
     &__slider {
-      display: none; 
+ 
     }
+    
+    &__task,
+    &__note {
+      display: none;
+    }
+    
+    
     
   }
 }

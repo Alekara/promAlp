@@ -12,3 +12,27 @@
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .footer {
+    padding: 1%;
+    font-size: 18px;
+    
+    &__company {
+      margin-bottom: 20px;
+    }
+    
+    &__company,
+    &__contacts {
+      width: 45%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer {
+    padding: 5%;
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,13 +1,15 @@
-.main-nav {
+.main-nav {  
   min-height: $header-height;
   position: fixed;
     left: 0;
     right: 0;
-    z-index: 1000;  
+    z-index: 1000;
   background: linear-gradient(to right, $color-blue, $color-primary);  
   
   &__list {
+    max-width: 1920px;
     min-height: $header-height;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,12 +17,24 @@
     list-style: none;    
   }
   
+  &__logo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 34px;
+    color: $color-red;    
+  }
+  
+  &__logo span {
+    font-family: "Monoton", cursive;
+    color: $color-white;
+    font-size: 30px; 
+  }
+  
   &__item {
     height: 30px;
     position: relative;
   }
   
-  &__item:hover::after {
+  &__item:not(:first-child):hover::after {
     content: "";
     width: 0;
     height: 2px;
@@ -49,16 +63,21 @@
 
 
 
-//.main-nav {  
-//
+@media (max-width: $tablet-width) {
+  .main-nav {
+    position: absolute;
+    width: 300px;
+    margin-left: auto;
+    
+    &__list {
+      flex-direction: column;
+    }
 
-//
-//  &__item {
-//    opacity: 0;
-//    animation: nav-animation .8s .3s ease-out forwards;
-//    
-//    
-//  }
+    &__item:hover::after {
+
+    }
+  }
+}
 
 
 

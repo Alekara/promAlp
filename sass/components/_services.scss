@@ -1,18 +1,9 @@
 .services {
   padding: $section-padding;
-
   
   &__heading {
     color: $color-blue;
     position: relative;
-  }
-  
-  &__heading::before {
-    @include before;
-  }
-
-  &__heading::after {
-    @include after;
   }
   
   &__list {
@@ -20,59 +11,38 @@
   }
   
   &__item {
+    min-height: 34px;
     padding-left: 40px;
     background: url(img/checkbox-paint.svg) 0 center no-repeat;
-    
   }
-  
 }
 
-//.services {
-
-
-
-//
-//  &__content {
-//    width: 90%;
-//    background-image: linear-gradient(110deg, rgba($color-white, .9) 50%, transparent 50%), url(img/services1.jpg);
-//    background-origin: center center;
-//    background-size: cover;
-//    background-repeat: no-repeat;
-//    padding: 4%;
-//  }
-//
-
-//
-
-//
-//  &__item:nth-child(-n+3) {
-//    width: 45%;
-//  }
-//
-//  &__item {
-//    width: 35%;
-//    margin-bottom: 10px;
-//
-//  }
-//
-
-//}
-
-
-@media (max-width: $mobile-width) {
+@media (max-width: $small-tablet-width) {
   .services {
 
-    &__heading::before {
-      display: none;
-    }
 
-    &__heading::after {
-      display: none;
-    }
-    
-    &__item {
-      margin-bottom: 20px;
-    }
 
   }
 }
+
+//@media (max-width: $mobile-width) {
+//  .services {
+//
+//    &__heading::before {
+//      display: none;
+//    }
+//
+//    &__heading::after {
+//      display: none;
+//    }
+//    
+//    &__item {
+//      min-height: 28px;
+//      padding-left: 30px;
+//      margin-bottom: 20px;
+//      font-size: 18px;
+//      background: url(img/checkbox-paint-mobile.svg) 0 top no-repeat;
+//    }
+//
+//  }
+//}

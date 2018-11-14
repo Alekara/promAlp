@@ -1,11 +1,23 @@
-.main-header {
+.header {
   min-height: $header-height;
+  margin-right: 0;
 
 }
 
-@media (max-width: $mobile-width) {
-  .main-header {
+
+@media (max-width: $tablet-width) {
+  .header {
     background-color: transparent;
+    position: absolute;
+      top: 0;
+      right: 0;
+
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header {
+    
   }
 }
 

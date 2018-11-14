@@ -3,41 +3,44 @@
 $color-primary: #48c6ef;  
 $color-blue: #0987e2;
 $color-white: #fff;
+$color-red: #f1364b;
+$color-red-dark: #be2333;
 
 
 
 //РАЗМЕРЫ
 $header-height: 60px;
 $section-mb: 100px;
-$section-padding: 3%;
+$section-padding: 5%;
 
 
 //ДЕКОРАЦИИ
 
 $text-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
 
-
-@mixin before {
-  content: "";
-  width: 100px;
-  height: 3px;
-  position: absolute;
-    top: 50%;
-    left: -140px;
-  background-color: $color-blue;
-}
-
-@mixin after {
-  content: "";
-  width: 100px;
-  height: 3px;
-  position: absolute;
-    top: 50%;
-    right: -140px;
-  background-color: $color-blue;
-}
+//
+//@mixin before {
+//  content: "";
+//  width: 100px;
+//  height: 3px;
+//  position: absolute;
+//    top: 50%;
+//    left: -140px;
+//  background-color: $color-blue;
+//}
+//
+//@mixin after {
+//  content: "";
+//  width: 100px;
+//  height: 3px;
+//  position: absolute;
+//    top: 50%;
+//    right: -140px;
+//  background-color: $color-blue;
+//}
 
 //РАЗРЕШЕНИЯ
 
 $tablet-width: 1350px;
+$small-tablet-width: 1024px;
 $mobile-width: 600px;

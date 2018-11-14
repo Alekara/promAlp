@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <title>Промышленные альпинисты в Минске и Беларуси</title>
@@ -13,9 +15,12 @@
 
 <body>
 
-  <header class="main-header">
+  <header class="header">
     <nav class="main-nav">
       <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <p class="main-nav__logo"><span>Prom</span>Alp</p>
+        </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#about">О нас</a>
         </li>
@@ -51,17 +56,24 @@
     <h2 class="about__heading h2-heading">Мы влюблены в высоту</h2>   
     <div class="about__container">
       <div class="about__left">
-        <img class="about__img about__img--1" src="img/greetings.jpg" alt="Промышленный альпинист на работе" width="480" height="455">
-        <img class="about__img about__img--2" src="img/alpinist.jpg" alt="Промышленный альпинист в горах" width="480" height="455">        
-      </div>
+        <picture>
+          <source media="(min-width: 600px)" srcset="img/greetings.jpg">
+          <img class="about__img about__img--1" src="img/greetings-mobile.jpg" alt="Промышленный альпинист на работе">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 600px)" srcset="img/alpinist.jpg">
+          <img class="about__img about__img--2" src="img/alpinist-mobile.jpg" alt="Промышленный альпинист в горах">
+        </picture>        
+      </div>             
       
       <div class="about__right">        
-        <p class="about__text">Для нас альпинизм - больше, чем "просто работа". Это то, чем мы живем и дышим. Даже свободное время мы покоряем вершины, только уже горные. Мы были на Эльбрусе, и для нас это далеко не предел. Ведь там, где другие испугались бы, мы находимся в своей стихии. </p>
-        <p class="about__text"> Гостиницы, стадионы, музеи, аэропорты, торговые центры, жилые дома, водонапорные башни - на все это мы, промышленные альпинисты, привыкли смотреть с ракурсов, недоступных обычным людям. Разумеется, одной смелости здесь недостаточно, гораздо большую роль играют сноровка, опыт и отличное оборудование. Все это у нас тоже есть.</p>
-             
+        <p class="about__text">Для нас альпинизм – гораздо больше, чем "просто работа". Это то, чем мы живем и дышим. Даже в свободное время мы покоряем вершины, только уже горные. Мы поднимались на Монблан и Эльбрус, были в Татрах. Поэтому там, где другие испугались бы, мы находимся в своей стихии. Однако не только смелость делает нас профессионалами высокого класса. Опыт, сноровка, слаженная команда специалистов и отличное оборудование – у нас есть все, чтобы гордиться своей работой и неизменно оставлять удовлетворенными наших клиентов.</p>        
+        <p class="about__text">Вам нужно поднять через окно крупногабаритный груз? Очистить крышу от снега? Может быть, требуется покрасить фасад дома или монтировать наружное освещение? Какие бы высотные работы вам ни понадобились, можете быть уверены: мы выполним их качественно и быстро. И после знакомства с нами вам не захочется обращаться к кому-либо другому!</p>                 
+        <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>     
       </div>
     </div>
-    <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>
+    
   </section>
 
     <section class="why-us" id="why-us">
@@ -69,7 +81,7 @@
         <ul class="why-us__list">
           <li class="why-us__item why-us__item--1">
             <h3 class="why-us__title">Дистанционная оценка сроков и стоимости</h3>
-            <p class="why-us__content">Предварительный расчет по фотографиям и/или проекту, окончательный - после визуального осмотра объекта</p>
+            <p class="why-us__content">Предварительный расчет по фотографиям и/или проекту, окончательный – после визуального осмотра объекта</p>
             
           </li>
 
@@ -121,19 +133,19 @@
 
         <ul class="services__list about__right">
           <li class="services__item">монтаж или демонтаж металлических конструкций (балки, фермы, ограждения, кронштейны, закладные, башенные краны и прочее);</li>
-          <li class="services__item">монтаж рекламных баннеров, иллюминации, подсветки, светодиодных лент;</li>
-          <li class="services__item">монтаж пожарных извещателей, сигнализации и систем видеонаблюдения;</li>
+          <li class="services__item">монтаж вентфасада;</li>
           <li class="services__item">монтаж блоков кондиционеров на фасадах здания;</li>
-          <li class="services__item">подъем или спуск негабаритных грузов через окно;</li>
-          <li class="services__item">обслуживание вышек связи (окраска и монтаж оборудования);</li>
+          <li class="services__item">окраска фасадов;</li>
+          <li class="services__item">монтаж рекламных баннеров, иллюминации, подсветки, светодиодных лент;</li>          
+          <li class="services__item">монтаж пожарных извещателей, сигнализации и систем видеонаблюдения;</li>          
           <li class="services__item">герметизация межпанельных стыков, швов;</li>
           <li class="services__item">очистка кровли от снега и наледи;</li>
+          <li class="services__item">кровельные работы;</li>
+          <li class="services__item">обслуживание вышек связи (окраска и монтаж оборудования);</li>
           <li class="services__item">окраска водонапорных башен;</li>
-          <li class="services__item">мойка окон и витражей;</li>
-          <li class="services__item">монтаж вентфасада;</li>
-          <li class="services__item">окраска фасадов;</li>
-          <li class="services__item">монтаж витражей;</li>
-          <li class="services__item">кровельные работы.</li>
+          <li class="services__item">подъем или спуск негабаритных грузов через окно;</li>
+          <li class="services__item">мойка окон и витражей;</li>         
+          <li class="services__item">монтаж витражей.</li>          
         </ul>
       </div>
     </section>
@@ -164,27 +176,27 @@
     <section class="about">
       <h2 class="about__heading h2-heading">Горят сроки?</h2>
       <div class="about__container">
-        <div class="about__left">
-
-          <!--        НУЖНЫ ЛИ ТУТ ВООБЩЕ ЭТИ КОНТЕЙНЕРЫ? ПРИ ТЕГЕ ПИКЧА ОНИ МЕШАЮТ ЦЕНТРОВКЕ!!-->
-
-          <img class="about__img about__img--3" src="img/more-alps.jpg" alt="Промышленный альпинист на работе" width="480" height="455">
-        </div>
+        <picture class="about__left">
+          <source media="(min-width: 600px)" srcset="img/more-alps.jpg">
+          <img class="about__img about__img--3" src="img/more-alps-mobile.jpg" alt="Промышленный альпинист на работе">
+        </picture>
+        
         <div class="about__right">
-          <p class="about__text">Без паники!</p>
-          <p class="about__text">По вашему желанию мы усилим команду еще несколькими первоклассными промышленными альпинистами и выполним задачу в максимально короткие сроки.</p>        
+          <p class="about__text">Без паники. Нам не раз доводилось работать в условиях жесткой нехватки времени.</p>
+          <p class="about__text">Даже если его очень мало, по вашему желанию мы усилим команду еще несколькими первоклассными промышленными альпинистами и выполним задачу в максимально короткие сроки. И, что еще важнее, переделывать работу после нас не придется.</p>
+          <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>       
         </div>
       </div>
-      <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>   
+        
     </section>    
     
     <section class="objects">
       <h2 class="objects__heading h2-heading">Объекты, на которых мы работали</h2>
+      <b class="objects__note">(и это лишь малая их часть!)</b>
       <div class="objects__container">        
         <div class="objects__description">
           <h3 class="objects__name"></h3>
           <p class="objects__task"></p>
-          <p class="objects__note">...и это лишь малая часть доверенных нам объектов!</p>
         </div>
         
         <div class="objects__slider">
@@ -217,8 +229,12 @@
     <section class="about order" id="order">
       <h2 class="about__heading h2-heading">Позвоните нам прямо сейчас!</h2>
       <div class="about__container">
-        <img class="about__img" src="img/call-us.jpg" >
-        <div class="order__text">        
+        <picture class="about__left">
+          <source media="(min-width: 600px)" srcset="img/call-us.jpg">
+          <img class="about__img" src="img/call-us-mobile.jpg" alt="Промышленный альпинист">
+        </picture>
+        
+        <div class="order__text about__right">        
           <p class="order__info">И закажите услуги промышленных альпинистов или получите бесплатную консультацию по вашей проблеме. Свяжитесь с нами при помощи Viber, если для вас это удобнее.</p>
           <p class="order__tel">+375 29 753-23-27</p>
         </div>      
