@@ -1,29 +1,31 @@
 .about {
-  padding: $section-padding;
+  padding: 0 $section-padding;
   margin-bottom: $section-mb;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   &__heading {
-    color: $color-blue;
     position: relative;
+    color: $color-blue;    
   }
-  
+ 
   &__container {
-    max-width: 1920px;
+    max-width: 1800px;
+      //для нормального отображения в IE
     display: flex;
     justify-content: center;
     align-items: center;  
   }
   
   &__left {
-    margin-right: 70px;
+    width: 500px;
+    margin-right: 60px;
     position: relative;
   }
-  
+
   &__img {
-    box-shadow: 0 0 10px $color-blue;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, .4);
     border-radius: 50%;
 
     &--1 {
@@ -42,71 +44,82 @@
       border-radius: 15%;
     }
   }
-  
+ 
     &__right {
       width: 50%;
-      font-size: 22px;  
+      padding: 40px 0;      
     }
-  
+ 
     &__text {
       margin-bottom: 30px;
-      
     }
   
     &__text:last-of-type {
-      margin-bottom: 90px;
+      margin-bottom: 60px;
     }
 }
 
-
 @media (max-width: $tablet-width) {
-  .about {
-
-    &__container {
-      flex-direction: column;    
+  .about {   
+    &__left {
+      width: 450px;
+      margin-right: 40px;
+    }
+    
+    &__text:last-of-type {
+      margin-bottom: 60px;
     }
   }
 }
-
 
 @media (max-width: $small-tablet-width) {
   .about {
+    margin-bottom: $section-mb-small;
     
-
+    &__container {
+      flex-direction: column;    
     }
-
-
-
+    
+    &__left {
+      width: auto;
+      margin-right: 0;
+    }
+    
+    &__img {
+      margin-bottom: 40px;
+    }
+    
+    &__right {
+      width: 80%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+    }
   }
+}
 
 
 
-//@media (max-width: $mobile-width) {
-//  .about {
-//    
-//    &__heading::before {
-//      display: none;
-//    }
-//
-//    &__heading::after {
-//      display: none;
-//    }
-//    
+@media (max-width: $mobile-width) {
+  .about {
+    &__img {
+      margin-bottom: 30px;
+      box-shadow: none;
+    }
+    
+    &__right {
+      width: 90%;
+      font-size: 18px;
+    }
+    
+    &__text:last-of-type {
+      margin-bottom: 50px;
+    }
+  }
+}
 
-//    
-//    &__left {
-//      margin-right: 0;
-//    }
-//    
-//    &__text {
-//      padding: 20px;
-//      max-width: 500px;
-//    }
-//  }
-//}
-//
-//
-//
 
 @keyframes change-photo {
   0%, 20% {

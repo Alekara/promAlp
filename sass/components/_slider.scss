@@ -9,27 +9,23 @@
   &__container {
     width: 600px;
     height: 400px;
+    position: relative;
     overflow: hidden;
     box-shadow: 0 0 15px $color-blue;
   }
   
-  &__stripe {
-    width: 600px;
-    height: 1200px;
-    position: relative;
-    top: 0;       
-    //чтобы слайдер на первое нажатие кнопки не реагировал "жестко"
-    transition: all .3s ease-out;
-  }
-  
-  &__stripe img {
-    display: block;
+  &__photo {
+    display: none;
+    
+    &--1 {
+      display: block;
+    }
   }
 
   &__btn {    
-    border: none;
     height: 60px;
     width: 100%;
+    border: none;
     background-color: $color-white;
 
     &--up {
@@ -43,10 +39,39 @@
     &:hover,
     &:focus {
       background-color: azure;
+      cursor: pointer;
     }
         
     &:focus {
       outline: none;
+    }
+  }
+  
+  &__task {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    z-index: 100;
+    font-size: 24px;
+    background-color: rgba($color-light-blue, .8);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .slider {
+
+  }
+}
+
+@media (max-width: $small-tablet-width) {
+  .slider {    
+    &__container {
+      width: 95%;
+      height: auto;
+    }
+    
+    &__btn {
+      width: 95%;
     }
   }
 }
@@ -54,7 +79,25 @@
 
 @media (max-width: $mobile-width) {
   .slider {
+    width: 300px;
+    height: 280px;
     
+    &__container {
+      width: 300px;
+    }
+    
+    &__btn {
+      width: 300px;
+      height: 30px;
+    }
+    
+    &__task {
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgba($color-light-blue, .7);
+  }
 
   }
 }
+
+

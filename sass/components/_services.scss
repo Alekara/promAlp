@@ -1,5 +1,5 @@
 .services {
-  padding: $section-padding;
+  padding: 0 $section-padding;
   
   &__heading {
     color: $color-blue;
@@ -13,36 +13,26 @@
   &__item {
     min-height: 34px;
     padding-left: 40px;
-    background: url(img/checkbox-paint.svg) 0 center no-repeat;
+    margin-bottom: 10px;
+    background: url(img/checkbox-paint.svg) 0 0 no-repeat;
   }
 }
 
 @media (max-width: $small-tablet-width) {
   .services {
-
-
-
+    &__list {
+      align-items: flex-start;
+    }
   }
 }
 
-//@media (max-width: $mobile-width) {
-//  .services {
-//
-//    &__heading::before {
-//      display: none;
-//    }
-//
-//    &__heading::after {
-//      display: none;
-//    }
-//    
-//    &__item {
-//      min-height: 28px;
-//      padding-left: 30px;
-//      margin-bottom: 20px;
-//      font-size: 18px;
-//      background: url(img/checkbox-paint-mobile.svg) 0 top no-repeat;
-//    }
-//
-//  }
-//}
+@media (max-width: $mobile-width) {
+  .services {
+    
+    &__item {
+      text-align: left;
+      font-size: 16px;
+    }
+
+  }
+}

@@ -1,6 +1,6 @@
 .footer {
-  display: flex;
   min-height: 200px;
+  display: flex;  
   align-items: center;
   justify-content: space-around;
   background-color: $color-blue;
@@ -17,14 +17,17 @@
   .footer {
     padding: 1%;
     font-size: 18px;
+  }
+}
+
+@media (max-width: $small-tablet-width) {
+  .footer {
+    padding: 1%;
+    font-size: 16px;
     
+    &__contacts,
     &__company {
-      margin-bottom: 20px;
-    }
-    
-    &__company,
-    &__contacts {
-      width: 45%;
+      max-width: 45%;
     }
   }
 }
@@ -34,5 +37,14 @@
     padding: 5%;
     flex-direction: column;
     text-align: center;
+    
+    &__company {
+      margin-bottom: 20px;
+    }
+    
+    &__contacts,
+    &__company {
+      max-width: 90%;
+    }
   }
 }

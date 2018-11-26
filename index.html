@@ -3,86 +3,94 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="picturefill.min.js" async></script>
   <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-  <title>Промышленные альпинисты в Минске и Беларуси</title>
+  <title>PromAlp - промышленные альпинисты в Минске и Беларуси</title>
 </head>
 
 <body>
+  <div class="container">
+    <header class="header">    
+      <nav class="main-nav main-nav--hidden">
+        <button class="main-nav__toggle" type="button">
+          <div class="main-nav__icon"></div>
+        </button>
+        <ul class="main-nav__list main-nav__list--hidden">
+          <li class="main-nav__item">
+            <p class="main-nav__logo"><span>Prom</span>Alp</p>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#about">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#why-us">Преимущества</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#stats">Cтатистика</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#services">Услуги</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#objects">Объекты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#order">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <header class="header">
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <p class="main-nav__logo"><span>Prom</span>Alp</p>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#about">О нас</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#why-us">Преимущества</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#stats">Cтатистика</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#services">Услуги</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#objects">Объекты</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#order">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <main class="main">
 
-  <main class="main">
+      <section class="main-screen">
+        <div class="main-screen__text">
+          <h1 class="main-screen__heading">Нужны промышленные альпинисты?</h1>
+          <span class="main-screen__sub">Наша работа всегда на высоте!</span>
+        </div>
+      </section>
 
-  <section class="main-screen">
-    <div class="main-screen__text">
-      <h1 class="main-screen__heading">Нужны промышленные альпинисты?</h1>
-      <span class="main-screen__sub">Наша работа всегда на высоте!</span>
-    </div>
-  </section>
+      <section class="about" id="about">
+        <h2 class="about__heading h2-heading">Мы любим свою работу</h2>   
+        <div class="about__container">
+          <div class="about__left">
+            <picture>
+              <source media="(min-width: 1351px)" srcset="img/greetings.jpg">
+              <source media="(min-width: 601px)" srcset="img/greetings-tablet.jpg">
+              <img class="about__img about__img--1" src="img/greetings-mobile.jpg" alt="Промышленный альпинист на работе">
+            </picture>
 
-  <section class="about" id="about">
-    <h2 class="about__heading h2-heading">Мы влюблены в высоту</h2>   
-    <div class="about__container">
-      <div class="about__left">
-        <picture>
-          <source media="(min-width: 600px)" srcset="img/greetings.jpg">
-          <img class="about__img about__img--1" src="img/greetings-mobile.jpg" alt="Промышленный альпинист на работе">
-        </picture>
+            <picture>
+              <source media="(min-width: 1351px)" srcset="img/alpinist.jpg">
+              <source media="(min-width: 601px)" srcset="img/alpinist-tablet.jpg">
+              <img class="about__img about__img--2" src="img/alpinist-mobile.jpg" alt="Промышленный альпинист в горах">
+            </picture>            
+          </div>             
 
-        <picture>
-          <source media="(min-width: 600px)" srcset="img/alpinist.jpg">
-          <img class="about__img about__img--2" src="img/alpinist-mobile.jpg" alt="Промышленный альпинист в горах">
-        </picture>        
-      </div>             
-      
-      <div class="about__right">        
-        <p class="about__text">Для нас альпинизм – гораздо больше, чем "просто работа". Это то, чем мы живем и дышим. Даже в свободное время мы покоряем вершины, только уже горные. Мы поднимались на Монблан и Эльбрус, были в Татрах. Поэтому там, где другие испугались бы, мы находимся в своей стихии. Однако не только смелость делает нас профессионалами высокого класса. Опыт, сноровка, слаженная команда специалистов и отличное оборудование – у нас есть все, чтобы гордиться своей работой и неизменно оставлять удовлетворенными наших клиентов.</p>        
-        <p class="about__text">Вам нужно поднять через окно крупногабаритный груз? Очистить крышу от снега? Может быть, требуется покрасить фасад дома или монтировать наружное освещение? Какие бы высотные работы вам ни понадобились, можете быть уверены: мы выполним их качественно и быстро. И после знакомства с нами вам не захочется обращаться к кому-либо другому!</p>                 
-        <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>     
-      </div>
-    </div>
-    
-  </section>
+          <div class="about__right">        
+              <p class="about__text">Нужно поднять через окно крупногабаритный груз? Очистить крышу от снега? Может быть, покрасить фасад дома или монтировать наружное освещение? Любые высотные работы мы выполним качественно и быстро.</p>        
+              <p class="about__text">Альпинизм – наша страсть. Мы поднимались на Монблан и Эльбрус, были в Татрах. Однако не только смелость и любовь к высоте делают нас профессионалами высокого класса. Опыт, сноровка, слаженная команда, отличное оборудование – после знакомства с нами вам не захочется обращаться к другим!</p>
+              <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>
+          </div>
+        </div>
+      </section>
 
-    <section class="why-us" id="why-us">
+      <section class="why-us" id="why-us">
         <h2 class="why-us__heading h2-heading">Почему именно мы?</h2>
         <ul class="why-us__list">
           <li class="why-us__item why-us__item--1">
             <h3 class="why-us__title">Дистанционная оценка сроков и стоимости</h3>
             <p class="why-us__content">Предварительный расчет по фотографиям и/или проекту, окончательный – после визуального осмотра объекта</p>
-            
           </li>
 
           <li class="why-us__item why-us__item--2">
@@ -116,155 +124,170 @@
             <p class="why-us__content">Мы оказываем услуги не только в Минске, но и в любой точке республики
             </p>
           </li>
-        </ul>
-        <div class="why-us__arrows">
-          <div class="why-us__left-arrow"></div>
+          
+          <li class="why-us__arrows">
+            <div class="why-us__left-arrow"></div>
           <div class="why-us__right-arrow"></div>
-        </div>
-    </section>
-    
-    <section class="services about" id="services">
-      <h2 class="services__heading h2-heading">Наши услуги:</h2>
-      <div class="about__container">
-        <picture class="about__left">
-          <source media="(min-width: 600px)" srcset="img/services.jpg">
-          <img class="about__img" src="img/services-mobile.jpg" alt="Промышленный альпинист на работе">  
-        </picture>
-
-        <ul class="services__list about__right">
-          <li class="services__item">монтаж или демонтаж металлических конструкций (балки, фермы, ограждения, кронштейны, закладные, башенные краны и прочее);</li>
-          <li class="services__item">монтаж вентфасада;</li>
-          <li class="services__item">монтаж блоков кондиционеров на фасадах здания;</li>
-          <li class="services__item">окраска фасадов;</li>
-          <li class="services__item">монтаж рекламных баннеров, иллюминации, подсветки, светодиодных лент;</li>          
-          <li class="services__item">монтаж пожарных извещателей, сигнализации и систем видеонаблюдения;</li>          
-          <li class="services__item">герметизация межпанельных стыков, швов;</li>
-          <li class="services__item">очистка кровли от снега и наледи;</li>
-          <li class="services__item">кровельные работы;</li>
-          <li class="services__item">обслуживание вышек связи (окраска и монтаж оборудования);</li>
-          <li class="services__item">окраска водонапорных башен;</li>
-          <li class="services__item">подъем или спуск негабаритных грузов через окно;</li>
-          <li class="services__item">мойка окон и витражей;</li>         
-          <li class="services__item">монтаж витражей.</li>          
+          </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="stats" id="stats">
-      <h2 class="stats__heading h2-heading">Наша работа в цифрах</h2>
-      <ul class="stats__list">
-        <li class="stats__item">
-          <p class="stats__item--number">13</p>
-          <p class="stats__item--text">лет опыта работы</p>
-        </li>
-        <li class="stats__item">
-          <p class="stats__item--number"> > 200</p>
-          <p class="stats__item--text">довольных заказчиков</p>
-        </li>
-        <li class="stats__item">
-          <p class="stats__item--number">10</p>
-          <p class="stats__item--text">профессионалов в команде</p>
-        </li>
-        <li class="stats__item">
-          <p class="stats__item--number">до 5</p>
-          <p class="stats__item--text">лет гарантии</p>
-        </li>
-      </ul>
-      <div class="stats__decoration"></div>
-    </section>
-    
-    <section class="about">
-      <h2 class="about__heading h2-heading">Горят сроки?</h2>
-      <div class="about__container">
-        <picture class="about__left">
-          <source media="(min-width: 600px)" srcset="img/more-alps.jpg">
-          <img class="about__img about__img--3" src="img/more-alps-mobile.jpg" alt="Промышленный альпинист на работе">
-        </picture>
-        
-        <div class="about__right">
-          <p class="about__text">Без паники. Нам не раз доводилось работать в условиях жесткой нехватки времени.</p>
-          <p class="about__text">Даже если его очень мало, по вашему желанию мы усилим команду еще несколькими первоклассными промышленными альпинистами и выполним задачу в максимально короткие сроки. И, что еще важнее, переделывать работу после нас не придется.</p>
-          <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>       
+      <section class="services about" id="services">
+        <h2 class="services__heading h2-heading">Наши услуги:</h2>
+        <div class="about__container">
+          <picture class="about__left">
+            <source media="(min-width: 1351px)" srcset="img/services.jpg">
+            <source media="(min-width: 601px)" srcset="img/services-tablet.jpg">
+            <img class="about__img" src="img/services-mobile.jpg" alt="Промышленный альпинист на работе">  
+          </picture>
+
+          <ul class="services__list about__right">
+            <li class="services__item">монтаж или демонтаж металлических конструкций (балки, фермы, ограждения, кронштейны, закладные, башенные краны и прочее);</li>
+            <li class="services__item">монтаж вентфасада;</li>
+            <li class="services__item">монтаж блоков кондиционеров на фасадах здания;</li>
+            <li class="services__item">окраска фасадов;</li>
+            <li class="services__item">монтаж рекламных баннеров, иллюминации, подсветки, светодиодных лент;</li>          
+            <li class="services__item">монтаж пожарных извещателей, сигнализации и систем видеонаблюдения;</li>          
+            <li class="services__item">герметизация межпанельных стыков, швов;</li>
+            <li class="services__item">очистка кровли от снега и наледи;</li>
+            <li class="services__item">кровельные работы;</li>
+            <li class="services__item">обслуживание вышек связи (окраска и монтаж оборудования);</li>
+            <li class="services__item">окраска водонапорных башен;</li>
+            <li class="services__item">подъем или спуск негабаритных грузов через окно;</li>
+            <li class="services__item">мойка окон и витражей;</li>         
+            <li class="services__item">монтаж витражей.</li>          
+          </ul>
         </div>
-      </div>
-        
-    </section>    
-    
-    <section class="objects" id="objects">
-      <h2 class="objects__heading h2-heading">Объекты, на которых мы работали</h2>
-      <b class="objects__note">(и это лишь малая их часть!)</b>
-      <div class="objects__container">        
-        <div class="objects__description">
-          <h3 class="objects__name"></h3>
-          <p class="objects__task"></p>
-        </div>
-        
-        <div class="objects__slider">
-          <div class="slider">
-            <button class="slider__btn slider__btn--up" type="button">
-              <img class="slider__arrow" src="img/up.svg" alt="">
-            </button>
+      </section>
 
-            <div class="slider__container">
-              <div class="slider__stripe">
-                <img src="img/aeroport.jpg" width="600" height="400" alt="Аэропорт Минск-2">
-                <img src="img/victoria.jpg" width="600" height="400" alt="Гостиница Виктория">
-                <img src="img/dinamo.jpg" width="600" height="400" alt="Стадион Динамо">
-                <img src="img/mir.jpg" width="600" height="400" alt="Кинотеатр Мир">
-                <img src="img/museum.jpg" width="600" height="400" alt="Музей ВОВ">
-                <img src="img/renessans.jpg" width="600" height="400" alt="Гостиница Ренессанс">
-                <img src="img/smorgon.jpg" width="600" height="400" alt="Производственный логистический комплекс в г. Сморгонь">
-              </div>
-            </div>
+      <section class="stats" id="stats">
+        <h2 class="stats__heading h2-heading">Наша работа в цифрах</h2>
+        <ul class="stats__list">
+          <li class="stats__item">
+            <p class="stats__item--number">13</p>
+            <p class="stats__item--text">лет опыта работы</p>
+          </li>
+          <li class="stats__item">
+            <p class="stats__item--number"> > 200</p>
+            <p class="stats__item--text">довольных заказчиков</p>
+          </li>
+          <li class="stats__item">
+            <p class="stats__item--number">10</p>
+            <p class="stats__item--text">профессионалов в команде</p>
+          </li>
+          <li class="stats__item">
+            <p class="stats__item--number">до 5</p>
+            <p class="stats__item--text">лет гарантии</p>
+          </li>
+        </ul>
+        <div class="stats__decoration"></div>
+      </section>
 
-            <button class="slider__btn slider__btn--down" type="button">
-              <img class="slider__arrow" src="img/down.svg" alt="">
-            </button>
+      <section class="about">
+        <h2 class="about__heading h2-heading">Горят сроки?</h2>
+        <div class="about__container">
+          <div class="about__left">
+            <picture>
+              <source media="(min-width: 1351px)" srcset="img/more-alps.jpg">
+              <source media="(min-width: 601px)" srcset="img/more-alps-tablet.jpg">
+              <img class="about__img about__img--3" src="img/more-alps-mobile.jpg" alt="Промышленные альпинисты">
+            </picture>            
+          </div>          
+
+          <div class="about__right">
+            <p class="about__text">Без паники! Нам не раз доводилось работать в условиях жесткой нехватки времени. Даже если его совсем мало, мы по вашему желанию усилим команду еще несколькими первоклассными промышленными альпинистами и выполним работу в максимально короткие сроки. И переделывать ее после нас не придется.</p>
+            <a href="#order" class="btn btn__order">Заказать услуги альпинистов</a>      
           </div>
         </div>
-      </div>      
-    </section>
-    
-    
-    <section class="about order" id="order">
-      <h2 class="about__heading h2-heading">Позвоните нам прямо сейчас!</h2>
-      <div class="about__container">
-        <picture class="about__left">
-          <source media="(min-width: 600px)" srcset="img/call-us.jpg">
-          <img class="about__img" src="img/call-us-mobile.jpg" alt="Промышленный альпинист">
-        </picture>
-        
-        <div class="order__text about__right">        
-          <p class="order__info">И закажите услуги промышленных альпинистов или получите бесплатную консультацию по вашей проблеме. Свяжитесь с нами при помощи Viber, если для вас это удобнее.</p>
-          <p class="order__tel">+375 29 753-23-27</p>
+      </section>    
+
+      <section class="objects" id="objects">
+        <h2 class="objects__heading h2-heading">Объекты, на которых мы работали</h2>
+        <b class="objects__note">(и это лишь малая их часть!)</b>
+        <div class="objects__container">
+          <div class="objects__slider">
+            <div class="slider">
+              <button class="slider__btn slider__btn--up" type="button">
+                <picture>
+                  <source media="(min-width: 601px)" srcset="img/up.svg">
+                  <img class="slider__arrow" src="img/up-mobile.svg" alt="Стрелка вверх">
+                </picture>
+              </button>
+
+              <div class="slider__container">
+                <p class="slider__task"></p>
+                <picture>
+                  <source media="(min-width: 601px)" srcset="img/aeroport.jpg">
+                  <img class="slider__photo slider__photo--1" src="img/aeroport-mobile.jpg" alt="Аэропорт Минск-2">
+                </picture>
+                <picture>
+                  <source media="(min-width: 601px)" srcset="img/victoria.jpg">
+                  <img class="slider__photo" src="img/victoria-mobile.jpg" alt="Гостиница Виктория">
+                </picture>
+                <picture>
+                  <source media="(min-width: 601px)" srcset="img/dinamo.jpg">
+                  <img class="slider__photo" src="img/dinamo-mobile.jpg" alt="Стадион Динамо">
+                </picture>
+                <picture>
+                  <source media="(min-width: 601px)" srcset="img/mir.jpg">
+                  <img class="slider__photo" src="img/mir-mobile.jpg" alt="Кинотеатр Мир">
+                </picture>
+                <picture>
+                  <source media="(min-width: 601px)" srcset="img/museum.jpg">
+                  <img class="slider__photo" src="img/museum-mobile.jpg" alt="Музей ВОВ">
+                </picture>
+                <picture>
+                  <source media="(min-width: 601px)" srcset="img/renessans.jpg">
+                  <img class="slider__photo" src="img/renessans-mobile.jpg" alt="Гостиница Ренессанс">
+                </picture>
+                <picture>
+                  <source media="(min-width: 601px)" srcset="img/smorgon.jpg">
+                  <img class="slider__photo" src="img/smorgon-mobile.jpg" alt="Производственный логистический комплекс в г. Сморгонь">
+                </picture>
+              </div>
+              
+              <button class="slider__btn slider__btn--down" type="button">
+                <picture>
+                  <source media="(min-width: 601px)" srcset="img/down.svg">
+                  <img class="slider__arrow" src="img/down-mobile.svg" alt="Стрелка вниз">
+                </picture>
+              </button>
+            </div>
+          </div>
+          <h3 class="objects__name"></h3>
         </div>      
+      </section>
+
+      <section class="about order" id="order">
+        <h2 class="about__heading h2-heading">Позвоните нам прямо сейчас!</h2>
+        <div class="about__container">
+          <picture class="about__left">
+            <source media="(min-width: 600px)" srcset="img/call-us.jpg">
+            <img class="about__img" src="img/call-us-mobile.jpg" alt="Промышленный альпинист">
+          </picture>
+
+          <div class="order__text about__right">        
+            <p class="order__info">И закажите услуги промышленных альпинистов или получите бесплатную консультацию по вашей проблеме. Свяжитесь с нами при помощи Viber, если для вас это удобнее.</p>
+            <p class="order__tel">+375 29 753-23-27</p>
+          </div>      
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__company">
+        <p>ИП Акиншев Алексей Александрович</p>
+        <p>Свидетельство о государственной регистрации <br>ИП УНП 191812715 от 11.12.2012</p>
       </div>
-    </section>
-
-  </main>
-  
-  <footer class="footer">
-    <div class="footer__company">
-      <p>ИП Акиншев Алексей Александрович</p>
-      <p>Свидетельство о государственной регистрации <br>ИП УНП 191812715 от 11.12.2012</p>
-    </div>
-    <div class="footer__contacts">
-      <b>Контакты:</b>
-      <p>220112, г. Минск, ул. Прушинских, д.74, кв. 23<br>
-        тел., Viber +375 29 753-23-27<br>
-        e-mail: 7532327@mail.ru
-      </p>
-    </div>
-  </footer>
-
-
-
-
-
-  <script src="script.js">
-
-  </script>
-
+      <div class="footer__contacts">
+        <b>Контакты:</b>
+        <p>220112, г. Минск, ул. Прушинских, д.74, кв. 23<br>
+          тел., Viber +375 29 753-23-27<br>
+          e-mail: 7532327@mail.ru
+        </p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
-
 </html>

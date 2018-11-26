@@ -1,7 +1,8 @@
 //ЦВЕТА
 
-$color-primary: #48c6ef;  
+$color-primary: #43CBFF;  
 $color-blue: #0987e2;
+$color-light-blue: #add6f0;
 $color-white: #fff;
 $color-red: #f1364b;
 $color-red-dark: #be2333;
@@ -10,34 +11,14 @@ $color-red-dark: #be2333;
 
 //РАЗМЕРЫ
 $header-height: 60px;
-$section-mb: 100px;
+$section-mb: 170px;
+$section-mb-small: 100px;
 $section-padding: 5%;
 
 
 //ДЕКОРАЦИИ
 
-$text-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
-
-//
-//@mixin before {
-//  content: "";
-//  width: 100px;
-//  height: 3px;
-//  position: absolute;
-//    top: 50%;
-//    left: -140px;
-//  background-color: $color-blue;
-//}
-//
-//@mixin after {
-//  content: "";
-//  width: 100px;
-//  height: 3px;
-//  position: absolute;
-//    top: 50%;
-//    right: -140px;
-//  background-color: $color-blue;
-//}
+$text-shadow: 0 2px 10px rgba(0, 0, 0, .6);
 
 //РАЗРЕШЕНИЯ
 

@@ -4,8 +4,8 @@ html {
 
 body {
   font-family: "Volkorn", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 28px;
   position: relative;
 }
 
@@ -16,6 +16,11 @@ body {
 html, body, p, ul, li, h1, h2, h3, h4 {
   padding: 0;
   margin: 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .main {
@@ -52,10 +57,42 @@ html, body, p, ul, li, h1, h2, h3, h4 {
   background-color: $color-blue;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: $tablet-width) {  
+  body {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  .h2-heading {
+    margin-bottom: 60px;    
+  }
+}
+
+@media (max-width: $small-tablet-width) {
+  .h2-heading {
+    margin-bottom: 50px;    
+  }
+  
+  .h2-heading::before {
+    display: none;
+  }
+
+  .h2-heading::after {
+    display: none;
+  }
+}
+
 
 @media (max-width: $mobile-width) {
   .h2-heading {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    font-size: 36px;
     
   }
 }

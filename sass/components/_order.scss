@@ -1,29 +1,44 @@
 .order {
-
+  
+  &__info {
+    margin-bottom: 30px;
+  }
   
   &__tel {
-//    height: 100px;
-    padding: 30px 160px;
+    padding: 30px 120px 30px 160px;
     font-size: 36px;
     line-height: 40px;
-    color: $color-primary;
-//    text-align: center;
+    color: $color-blue;
     background: 
       url(img/telephone.svg) left center no-repeat,
       url(img/viber.svg) 80px center no-repeat;
-  }
-  
+  }  
 }
 
-//.order {
-//  
-//  &__text {
-//    width: 50%;
-//  }
-//  
-//  &__info {
-//    margin-bottom: 30px;
-//  }
-//  
 
-//}
+@media (max-width: $tablet-width) {  
+  .order {
+    &__tel {
+      padding: 30px 50px 30px 110px;
+      font-size: 30px;
+      line-height: 38px;
+      background: 
+        url(img/telephone-tablet.svg) left center no-repeat,
+        url(img/viber-tablet.svg) 56px center no-repeat;
+    }
+  }
+}
+
+
+@media (max-width: $mobile-width) {  
+  .order {
+    &__tel {
+      padding: 50px 0 50px 0;
+      font-size: 30px;
+      line-height: 38px;
+      background: 
+        url(img/telephone-tablet.svg) center top no-repeat,
+        url(img/viber-tablet.svg) center bottom no-repeat;
+    }
+  }
+}

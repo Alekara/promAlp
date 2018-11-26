@@ -1,5 +1,5 @@
 .objects {
-  min-height: calc(100vh - 60px);
+//  min-height: calc(100vh - 60px);
   margin-bottom: $section-mb;
   padding: $section-padding;  
   background-color: $color-primary;
@@ -23,66 +23,90 @@
   }
   
   &__container {
+    width: 1100px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
   }
   
-  &__description {
-    background-color: rgba($color-primary, .3);
-    padding: 2%;
-//    height: 300px;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-  }
-  
   &__name {
-    margin-bottom: 30px;
+    width: 450px;
+    padding: 1%;  
     font-size: 32px;
-    color: $color-white;
-    height: 50px;
-  }
-
-  &__task {
-    font-size: 24px;
-    margin-bottom: 80px;
-    height: 60px;
+    color: $color-white;    
   }
 
   &__slider {
-    width: 620px; 
+    width: 600px;
+    margin-right: 50px;
   }
 }
 
 
 @media (max-width: $tablet-width) {
+  .objects {    
+    &__container {
+      width: 940px;
+    }
+    
+    &__slider {
+     margin-right: 0;
+     margin-bottom: 40px;
+   }
+    
+    &__note {
+      margin: -30px auto 70px;
+    }
+  }
+}
+
+
+@media (max-width: $small-tablet-width) {
   .objects {
-//    display: none;
+    padding: $section-padding 0; 
+    
+    &__container {
+      width: 580px;
+      flex-direction: column;
+    }
+    
+    &__slider {
+      width: 95%;
+      height: auto;
+    }
+
   }
 }
 
 
 @media (max-width: $mobile-width) {
   .objects {
-    
+    padding: 15% 5px;
+      
     &__container {
-      flex-direction: column;
+      width: 300px;
     }
-    
+      
+    &__name {
+      width: 300px;
+      padding: 1%;  
+      font-size: 20px;   
+    }
+      
     &__slider {
- 
+      width: 100%;
+      margin-bottom: 20px;
     }
     
-    &__task,
     &__note {
-      display: none;
-    }
-    
-    
-    
-  }
+      width: 300px;
+      margin: -30px auto 30px;
+      display: block;
+      color: $color-white;
+      font-size: 18px;
+      text-align: center;
+    } 
+  }    
 }
