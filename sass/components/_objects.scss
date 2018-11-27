@@ -84,6 +84,7 @@
 @media (max-width: $mobile-width) {
   .objects {
     padding: 15% 5px;
+    margin-bottom: $section-mb-small;
       
     &__container {
       width: 300px;

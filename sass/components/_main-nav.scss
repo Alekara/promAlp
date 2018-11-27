@@ -1,4 +1,4 @@
-.main-nav {  
+.main-nav {
   position: fixed;
     left: 0;
     right: 0;
@@ -6,18 +6,18 @@
   background: linear-gradient(to right, $color-blue, $color-primary);
   
   &__list {
-    max-width: 1920px;
+    max-width: 1800px;
     min-height: $header-height;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    list-style: none;    
+    list-style: none; 
   }
  
   &__logo {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Archivo Black", sans-serif;
     font-size: 34px;
     color: $color-red;    
   }
@@ -29,7 +29,7 @@
   }
   
   &__item {
-    height: 30px;
+    height: 30px;    
     position: relative;
   }
   
@@ -89,7 +89,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba($color-blue, .7);
+    background: rgba($color-blue, .8);
     transition: all .6s ease-out;
     
     &--hidden {
