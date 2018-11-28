@@ -1,17 +1,16 @@
 .btn {
   padding: 30px 60px;
-  text-decoration: none;
-  text-transform: uppercase;
   display: inline-block;
   border-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;  
+  text-align: center;
   
-  &__order {
-    
+  &__order {    
     align-self: center;
     background-color: $color-red;
     color: $color-white;
-    font-weight: 500;
-    text-align: center;
+    font-weight: 500;    
     box-shadow: 5px 5px 5px #7e7171;
     transition: .3s ease;
   }
@@ -43,10 +42,9 @@
 
 @media (max-width: $mobile-width) {
   .btn {
-    text-align: center;
+    padding: 20px 30px;
 
-    &__order {
-      padding: 20px 30px;
+    &__order {      
       font-size: 16px;
     }
   }

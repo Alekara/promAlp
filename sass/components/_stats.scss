@@ -86,8 +86,7 @@
 }
 
 @media (max-width: $small-tablet-width) {
-  .stats {
-    
+  .stats {    
     &__heading {
       margin-bottom: 80px;
     }
@@ -135,7 +134,6 @@
     &__item--number {
       margin-bottom: 15px;
     }
-
   }
 }
 

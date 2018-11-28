@@ -33,7 +33,6 @@
     align-items: center;    
     background-color: rgba(0, 0, 0, .3);    
     text-shadow: 0 2px 10px #000;
-      //ПОСМОТРЕТЬ, НЕЛЬЗЯ ЛИ ДОБАВИТЬ ПЕРЕМЕННУЮ
     text-align: center;
     line-height: 1.2;
   }
@@ -59,7 +58,14 @@
 
 
 @media (max-width: $tablet-width) {
-  .main-screen {    
+  .main-screen {
+    &::before {
+      background: 
+        linear-gradient(to bottom right, transparent, rgba($color-primary, .3)),
+        url(img/bg-tablet.jpg) top left no-repeat;
+      background-size: cover;
+    }
+    
     &__heading {
       margin-bottom: 10px;
     }
@@ -70,6 +76,13 @@
   .main-screen {
     min-height: 100vh;
     margin-bottom: $section-mb-small;
+    
+    &::before {
+      background: 
+        linear-gradient(to bottom right, transparent, rgba($color-primary, .3)),
+        url(img/bg-smalltablet.jpg) top left no-repeat;
+      background-size: cover;
+    }
     
     &__text {
       padding: 0 20px;
@@ -99,10 +112,8 @@
     &::before {
       background: 
         linear-gradient(to bottom right, transparent, rgba($color-primary, .3)),
-        url(img/bg-mobile-2.jpg) center center no-repeat;
+        url(img/bg-mobile.jpg) center center no-repeat;
     }
-    
-    //ПРИДУМАТЬ ИЗОБРАЖЕНИЕ, ВОЗМОЖНО, СДЕЛАТЬ ЕЩЕ ОДНО РАЗРЕШЕНИЕ ЭКРАНА ПОД НЕГО
 
     &__heading {
       font-size: 32px;      

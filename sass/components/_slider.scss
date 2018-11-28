@@ -57,12 +57,6 @@
   }
 }
 
-@media (max-width: $tablet-width) {
-  .slider {
-
-  }
-}
-
 @media (max-width: $small-tablet-width) {
   .slider {    
     &__container {
@@ -92,11 +86,10 @@
     }
     
     &__task {
-    padding: 5px;
-    font-size: 16px;
-    background-color: rgba($color-light-blue, .7);
-  }
-
+      padding: 5px;
+      font-size: 16px;
+      background-color: rgba($color-light-blue, .7);
+    }
   }
 }
 

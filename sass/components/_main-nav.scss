@@ -6,7 +6,7 @@
   background: linear-gradient(to right, $color-blue, $color-primary);
   
   &__list {
-    max-width: 1800px;
+    max-width: 1900px;
     min-height: $header-height;
     margin: 0 auto;
     display: flex;
@@ -41,8 +41,8 @@
       left: 0;
       bottom: 0;
     background: linear-gradient(to right, $color-white, $color-primary);
-    animation: link-hover 1.5s ease infinite;
     box-shadow: 0 0 1px #000;
+    animation: link-hover 1.5s ease infinite;    
   }
   
   &__item:first-child:hover::after {
@@ -84,8 +84,8 @@
 
 @media (max-width: $small-tablet-width) {
   .main-nav {
-    height: 100vh;
     width: 300px;
+    height: 100vh;    
     display: flex;
     justify-content: center;
     align-items: center;

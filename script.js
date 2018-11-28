@@ -40,7 +40,6 @@ function clickLeftArrow() {
 
 
 //СЛАЙДЕР ОБЪЕКТОВ
-
 upArrow.addEventListener("click", clickUpArrow);                         
 downArrow.addEventListener("click", clickDownArrow);
 
@@ -96,7 +95,6 @@ function checkSlide() {
 }
 
 //СКРИПТ ДЛЯ КНОПОК "ПОКАЗАТЬ МЕНЮ/СКРЫТЬ МЕНЮ"
-
 var menuToggle = document.querySelector(".main-nav__toggle");
 
 menuToggle.addEventListener("click", function () {

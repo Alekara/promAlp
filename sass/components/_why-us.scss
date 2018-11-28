@@ -98,6 +98,8 @@
 @media (max-width: $small-tablet-width) {
   .why-us {
     margin-bottom: $section-mb-small;
+    background: linear-gradient(to bottom right, rgba($color-primary, .8), rgba($color-blue, .8)),
+    url(img/why-us-smalltablet.jpg) center no-repeat;
     
     &__item {
       padding: 4%;
@@ -111,14 +113,15 @@
     
     &__content {
       font-size: 18px;
-    }  
-    
+    }    
   }
 }
 
 
 @media (max-width: $mobile-width) {
   .why-us {
+    background: linear-gradient(to bottom right, rgba($color-primary, .8), rgba($color-blue, .8)),
+    url(img/why-us-mobile.jpg) center no-repeat;
     &__heading {
       margin-top: 20px;
     }
@@ -164,10 +167,6 @@
         right: 16%;
       background: url(img/right-arrow.svg) no-repeat 0 0;
     }
-    
-    
-
-
   }
 }
 

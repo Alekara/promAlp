@@ -89,7 +89,7 @@ img {
   background: -webkit-gradient(linear, left top, right top, from(#0987e2), to(#43CBFF));
   background: linear-gradient(to right, #0987e2, #43CBFF); }
   .main-nav__list {
-    max-width: 1800px;
+    max-width: 1900px;
     min-height: 60px;
     margin: 0 auto;
     display: -webkit-box;
@@ -123,10 +123,10 @@ img {
     bottom: 0;
     background: -webkit-gradient(linear, left top, right top, from(#fff), to(#43CBFF));
     background: linear-gradient(to right, #fff, #43CBFF);
-    -webkit-animation: link-hover 1.5s ease infinite;
-            animation: link-hover 1.5s ease infinite;
     -webkit-box-shadow: 0 0 1px #000;
-            box-shadow: 0 0 1px #000; }
+            box-shadow: 0 0 1px #000;
+    -webkit-animation: link-hover 1.5s ease infinite;
+            animation: link-hover 1.5s ease infinite; }
   .main-nav__item:first-child:hover::after {
     display: none; }
   .main-nav__link {
@@ -149,8 +149,8 @@ img {
     font-size: 19px; } }
 @media (max-width: 1024px) {
   .main-nav {
-    height: 100vh;
     width: 300px;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -330,12 +330,20 @@ img {
             animation: sub-movement 1.5s .05s ease-out forwards; }
 
 @media (max-width: 1350px) {
+  .main-screen::before {
+    background: -webkit-gradient(linear, left top, right bottom, from(transparent), to(rgba(67, 203, 255, 0.3))), url(img/bg-tablet.jpg) top left no-repeat;
+    background: linear-gradient(to bottom right, transparent, rgba(67, 203, 255, 0.3)), url(img/bg-tablet.jpg) top left no-repeat;
+    background-size: cover; }
   .main-screen__heading {
     margin-bottom: 10px; } }
 @media (max-width: 1024px) {
   .main-screen {
     min-height: 100vh;
     margin-bottom: 100px; }
+    .main-screen::before {
+      background: -webkit-gradient(linear, left top, right bottom, from(transparent), to(rgba(67, 203, 255, 0.3))), url(img/bg-smalltablet.jpg) top left no-repeat;
+      background: linear-gradient(to bottom right, transparent, rgba(67, 203, 255, 0.3)), url(img/bg-smalltablet.jpg) top left no-repeat;
+      background-size: cover; }
     .main-screen__text {
       padding: 0 20px;
       bottom: 3%;
@@ -352,8 +360,8 @@ img {
     max-height: 720px;
     min-height: 480px; }
     .main-screen::before {
-      background: -webkit-gradient(linear, left top, right bottom, from(transparent), to(rgba(67, 203, 255, 0.3))), url(img/bg-mobile-2.jpg) center center no-repeat;
-      background: linear-gradient(to bottom right, transparent, rgba(67, 203, 255, 0.3)), url(img/bg-mobile-2.jpg) center center no-repeat; }
+      background: -webkit-gradient(linear, left top, right bottom, from(transparent), to(rgba(67, 203, 255, 0.3))), url(img/bg-mobile.jpg) center center no-repeat;
+      background: linear-gradient(to bottom right, transparent, rgba(67, 203, 255, 0.3)), url(img/bg-mobile.jpg) center center no-repeat; }
     .main-screen__heading {
       font-size: 32px; }
     .main-screen__sub {
@@ -572,7 +580,9 @@ img {
     padding-left: 160px; } }
 @media (max-width: 1024px) {
   .why-us {
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(67, 203, 255, 0.8)), to(rgba(9, 135, 226, 0.8))), url(img/why-us-smalltablet.jpg) center no-repeat;
+    background: linear-gradient(to bottom right, rgba(67, 203, 255, 0.8), rgba(9, 135, 226, 0.8)), url(img/why-us-smalltablet.jpg) center no-repeat; }
     .why-us__item {
       padding: 4%;
       padding-left: 100px;
@@ -583,37 +593,40 @@ img {
     .why-us__content {
       font-size: 18px; } }
 @media (max-width: 600px) {
-  .why-us__heading {
-    margin-top: 20px; }
-  .why-us__list {
-    padding: 50px 5% 10%;
-    position: relative; }
-  .why-us__item {
-    height: 350px;
-    padding: 110px 7% 50px;
-    display: none;
-    background-position: center 20px; }
-    .why-us__item--1 {
-      display: block; }
-  .why-us__item:hover {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  .why-us__title {
-    text-align: center; }
-  .why-us__left-arrow {
-    width: 52px;
-    height: 52px;
-    position: absolute;
-    top: 17%;
-    left: 16%;
-    background: url(img/left-arrow.svg) no-repeat 0 0; }
-  .why-us__right-arrow {
-    width: 52px;
-    height: 52px;
-    position: absolute;
-    top: 17%;
-    right: 16%;
-    background: url(img/right-arrow.svg) no-repeat 0 0; } }
+  .why-us {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(67, 203, 255, 0.8)), to(rgba(9, 135, 226, 0.8))), url(img/why-us-mobile.jpg) center no-repeat;
+    background: linear-gradient(to bottom right, rgba(67, 203, 255, 0.8), rgba(9, 135, 226, 0.8)), url(img/why-us-mobile.jpg) center no-repeat; }
+    .why-us__heading {
+      margin-top: 20px; }
+    .why-us__list {
+      padding: 50px 5% 10%;
+      position: relative; }
+    .why-us__item {
+      height: 350px;
+      padding: 110px 7% 50px;
+      display: none;
+      background-position: center 20px; }
+      .why-us__item--1 {
+        display: block; }
+    .why-us__item:hover {
+      -webkit-transform: translateX(0);
+              transform: translateX(0); }
+    .why-us__title {
+      text-align: center; }
+    .why-us__left-arrow {
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      top: 17%;
+      left: 16%;
+      background: url(img/left-arrow.svg) no-repeat 0 0; }
+    .why-us__right-arrow {
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      top: 17%;
+      right: 16%;
+      background: url(img/right-arrow.svg) no-repeat 0 0; } }
 .stats {
   padding: 7% 5%;
   margin-bottom: 170px;
@@ -716,8 +729,8 @@ img {
     .stats__item--number {
       margin-bottom: 15px; } }
 .objects {
-  margin-bottom: 170px;
   padding: 5%;
+  margin-bottom: 170px;
   background-color: #43CBFF; }
   .objects__heading {
     color: #fff;
@@ -943,17 +956,17 @@ img {
       max-width: 90%; } }
 .btn {
   padding: 30px 60px;
+  display: inline-block;
+  border-radius: 30px;
   text-decoration: none;
   text-transform: uppercase;
-  display: inline-block;
-  border-radius: 30px; }
+  text-align: center; }
   .btn__order {
     -ms-flex-item-align: center;
         align-self: center;
     background-color: #f1364b;
     color: #fff;
     font-weight: 500;
-    text-align: center;
     -webkit-box-shadow: 5px 5px 5px #7e7171;
             box-shadow: 5px 5px 5px #7e7171;
     -webkit-transition: .3s ease;
@@ -974,9 +987,8 @@ img {
     padding: 20px 40px; } }
 @media (max-width: 600px) {
   .btn {
-    text-align: center; }
+    padding: 20px 30px; }
     .btn__order {
-      padding: 20px 30px;
       font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,6 @@
 .objects {
-//  min-height: calc(100vh - 60px);
-  margin-bottom: $section-mb;
-  padding: $section-padding;  
+  padding: $section-padding;
+  margin-bottom: $section-mb;    
   background-color: $color-primary;
   
   &__heading {
@@ -76,7 +75,6 @@
       width: 95%;
       height: auto;
     }
-
   }
 }
 
